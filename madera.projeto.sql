@@ -49,7 +49,7 @@ forn_rpstnt		varchar(40)		not null,
 )
 go
 
-create table madera.clientes
+create table madera.cliente
 (
 clie_CD			int				primary key			identity(1,1),
 clie_NM			varchar(40)		not null,
@@ -62,8 +62,6 @@ clie_ref		varchar(40)		not null,
 clie_fone_ref	varchar(20)		not null,
 )
 go
-
-
 
 ------------------Tabelas-Controles--------------------------------------------------
 
