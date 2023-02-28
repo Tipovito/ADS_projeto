@@ -71,8 +71,27 @@ caix_CD			int				primary key			identity(1,1),
 func_CD			int				foreign				key references madera.funcionarios,
 clie_CD			int				foreign				key references madera.clientes,
 prod_CD			int				foreign				key references madera.produtos,
-prod_QT
+prod_QT			int				not null,
 caix_Vtotal		money			not null,
-caix_pgmnt		
+caix_pgmnt		varchar(20)		not null,
+)
+go
+
+create table madera.control_vendas
+(
+vend_CD			int				primary key			identity(1,1),
+clie_CD			int				foreign				key references madera.clientes,
+vend_DT			date			not null,
+vend_venci		date			not null,
+vend_pgmnt		varchar(20)		not null,
+func_CD			int				foreign				key references madera.funcionarios,
+)
+go
+
+create table madera.control_estoque
+(
+esto_CD			int				primary key			identity(1,1),
+prod_CD			int				foreign				key references madera.produtos,
+prod_desc		varchar(40)		not null,
 )
 go
