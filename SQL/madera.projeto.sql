@@ -7,7 +7,7 @@ go
 create schema madera authorization dbo
 go
 
----------------------Tabelas-Login-e-Cadastros--------------------------------------
+---------------------login-----------------------------------------------------------
 
 create table madera.login
 (
@@ -17,6 +17,8 @@ log_senha		int				not null,
 log_cargo		varchar(30)		not null,
 )
 go
+
+---------------------Tabelas-Cadastros-----------------------------------------------
 
 create table madera.funcionarios
 (
@@ -63,6 +65,34 @@ clie_fone_ref	varchar(20)		not null,
 )
 go
 
+------------------tabelas-Produtos-e-Pedidos------------------------------------------
+create table madera.produtos
+(
+prod_CD			int				primary key			identity(1,1),
+prod_desc		varchar(40)		not null,
+prod_tipo		varchar(30)		not null,
+prod_marca		varchar(30)		not null,
+prod_mate		varchar(20)		not null,
+prod_QT			int				not null,
+prod_VL_aquisi	money			not null,
+prod_VL_venda	money			not null,
+)
+go
+
+create table madera.pedidos
+(
+pedi_CD			int				primary key			identity(1,1),
+pedi_DT			date			not null,
+clie_CD			int				foreign				key references madera.clientes,
+clie_NM			varchar(40)		not null,
+clie_fone		varchar(20)		not null,
+prod_CD			int				foreign				key references madera.produtos,
+prod_desc		varchar(40)		not null,
+pedi_end_entre	varchar(40)		not null,
+pedi_DT_entre	date			not null,
+pedi_status		varchar(20)		not null,
+)
+go
 ------------------Tabelas-Controles--------------------------------------------------
 
 create table madera.control_caixa
@@ -93,5 +123,12 @@ create table madera.control_estoque
 esto_CD			int				primary key			identity(1,1),
 prod_CD			int				foreign				key references madera.produtos,
 prod_desc		varchar(40)		not null,
+esto_DT_entra	date			not null,
+esto_DT_saida	date			not null,
+esto_QT_entra	int				not null,
+esto_QT_saida	int				not null,
+forn_CD			int				foreign				key references madera.fornecedores,
+forn_Rsocial	varchar(40)		not null,
+esto_uni		int				not null,
 )
 go
