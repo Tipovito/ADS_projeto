@@ -7,7 +7,7 @@ go
 create schema madera authorization dbo
 go
 
----------------------login-----------------------------------------------------------
+--login--
 
 create table madera.login
 (
@@ -18,7 +18,7 @@ log_cargo		varchar(30)		not null,
 )
 go
 
----------------------Tabelas-Cadastros-----------------------------------------------
+--Tabelas-Cadastros--
 
 create table madera.funcionarios
 (
@@ -51,7 +51,7 @@ forn_rpstnt		varchar(40)		not null,
 )
 go
 
-create table madera.cliente
+create table madera.clientes
 (
 clie_CD			int				primary key			identity(1,1),
 clie_NM			varchar(40)		not null,
@@ -65,7 +65,7 @@ clie_fone_ref	varchar(20)		not null,
 )
 go
 
-------------------tabelas-Produtos-e-Pedidos------------------------------------------
+--tabelas-Produtos-e-Pedidos--
 create table madera.produtos
 (
 prod_CD			int				primary key			identity(1,1),
@@ -93,7 +93,7 @@ pedi_DT_entre	date			not null,
 pedi_status		varchar(20)		not null,
 )
 go
-------------------Tabelas-Controles--------------------------------------------------
+--Tabelas-Controles--
 
 create table madera.control_caixa
 (
@@ -132,3 +132,10 @@ forn_Rsocial	varchar(40)		not null,
 esto_uni		int				not null,
 )
 go
+
+--comandos--
+
+--use master
+--drop database mahogany
+
+--drop table madera.cliente
