@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCadFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadFuncionarios.Designer.cs">
+      <DependentUpon>frmCadFuncionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,8 +72,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCadFuncionarios.resx">
+      <DependentUpon>frmCadFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
@@ -112,6 +124,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Design sem nome %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My project-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38035499-e7e0-462d-b1ab-ca3f67d4bd4c.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ae4e26b2-6ef3-483c-bd52-21fa8d947a90.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My project-11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

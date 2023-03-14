@@ -10,3 +10,5 @@ C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.cspr
 C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.exe
 C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.pdb
 C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmLogin.resources
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmMenu.resources
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmCadFuncionarios.resources

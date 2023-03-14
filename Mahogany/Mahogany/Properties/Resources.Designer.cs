@@ -63,6 +63,26 @@ namespace Mahogany.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _38035499_e7e0_462d_b1ab_ca3f67d4bd4c {
+            get {
+                object obj = ResourceManager.GetObject("38035499-e7e0-462d-b1ab-ca3f67d4bd4c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ae4e26b2_6ef3_483c_bd52_21fa8d947a90 {
+            get {
+                object obj = ResourceManager.GetObject("ae4e26b2-6ef3-483c-bd52-21fa8d947a90", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Design_sem_nome {
             get {
                 object obj = ResourceManager.GetObject("Design sem nome", resourceCulture);
@@ -116,6 +136,26 @@ namespace Mahogany.Properties {
         internal static System.Drawing.Bitmap Mahogany {
             get {
                 object obj = ResourceManager.GetObject("Mahogany", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap My_project_1 {
+            get {
+                object obj = ResourceManager.GetObject("My project-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap My_project_11 {
+            get {
+                object obj = ResourceManager.GetObject("My project-11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

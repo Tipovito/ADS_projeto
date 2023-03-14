@@ -42,7 +42,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Window;
             this.label1.Font = new System.Drawing.Font("Segoe Script", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(143, 333);
+            this.label1.Location = new System.Drawing.Point(130, 326);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(194, 42);
             this.label1.TabIndex = 1;
@@ -66,7 +66,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(147, 450);
+            this.label2.Location = new System.Drawing.Point(134, 453);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(186, 15);
             this.label2.TabIndex = 3;
@@ -76,10 +76,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Mahogany.Properties.Resources.Mahogany;
+            this.pictureBox1.Image = global::Mahogany.Properties.Resources.ae4e26b2_6ef3_483c_bd52_21fa8d947a90;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(474, 474);
+            this.pictureBox1.Size = new System.Drawing.Size(455, 477);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -89,12 +89,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 474);
+            this.ClientSize = new System.Drawing.Size(455, 477);
             this.ControlBox = false;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.progressBar1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmSplash_Load);

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Mahogany
 {
-    public partial class frmMenu : Form
+    public partial class frmCadFuncionarios : Form
     {
-        public frmMenu()
+        public frmCadFuncionarios()
         {
             InitializeComponent();
-        }
-
-        private void cadastroDeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
