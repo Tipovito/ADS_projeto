@@ -55,7 +55,7 @@ clie_fone_ref	varchar(20)		not null,
 )
 go
 
---tabelas-Produtos-e-Pedidos--
+--tabelas-vendas--
 
 create table madera.produtos
 (
