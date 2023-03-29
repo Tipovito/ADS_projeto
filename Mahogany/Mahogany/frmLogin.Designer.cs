@@ -98,7 +98,8 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.MintCream;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Romantic", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.button1.Location = new System.Drawing.Point(407, 314);
             this.button1.Name = "button1";
@@ -111,6 +112,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.MintCream;
+            this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(501, 314);
             this.button2.Name = "button2";

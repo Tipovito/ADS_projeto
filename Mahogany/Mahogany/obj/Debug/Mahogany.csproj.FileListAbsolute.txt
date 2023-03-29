@@ -12,3 +12,17 @@ C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.pdb
 C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmLogin.resources
 C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmMenu.resources
 C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmCadFuncionarios.resources
+C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\bin\Debug\Mahogany.exe.config
+C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\bin\Debug\Mahogany.exe
+C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\bin\Debug\Mahogany.pdb
+C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\obj\Debug\Mahogany.csproj.AssemblyReference.cache
+C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\obj\Debug\Mahogany.csproj.SuggestedBindingRedirects.cache
+C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\obj\Debug\Mahogany.frmCadFuncionarios.resources
+C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\obj\Debug\Mahogany.frmLogin.resources
+C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\obj\Debug\Mahogany.frmMenu.resources
+C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\obj\Debug\Mahogany.frmSplash.resources
+C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\obj\Debug\Mahogany.Properties.Resources.resources
+C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\obj\Debug\Mahogany.csproj.GenerateResource.cache
+C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\obj\Debug\Mahogany.csproj.CoreCompileInputs.cache
+C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\obj\Debug\Mahogany.exe
+C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\obj\Debug\Mahogany.pdb
