@@ -22,11 +22,14 @@ func_numcasa	int				not null,
 func_fone		varchar(20)		not null,
 func_email		varchar(40)		not null,
 func_comiss		money			not null,
-func_usu		varchar(30)		not null,
+func_login		varchar(30)		not null,
 func_senha		int				not null,
 func_cargo		varchar(30)		not null,
 )
 go
+
+alter table madera.funcionarios
+add func_cargo		varchar(30)		not null
 
 create table madera.fornecedores
 (
@@ -130,3 +133,5 @@ go
 --use master
 --drop database mahogany
 --drop table madera.cliente
+
+select * from madera.funcionarios
