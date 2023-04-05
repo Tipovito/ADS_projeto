@@ -134,4 +134,4 @@ go
 --drop database mahogany
 --drop table madera.cliente
 
-select * from madera.funcionarios
+select * from madera.produtos

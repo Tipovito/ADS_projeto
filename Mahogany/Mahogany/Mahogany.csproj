@@ -46,11 +46,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="frmAlteraFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlteraFuncionario.Designer.cs">
+      <DependentUpon>frmAlteraFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlteraProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlteraProdutos.Designer.cs">
+      <DependentUpon>frmAlteraProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadClientes.Designer.cs">
+      <DependentUpon>frmCadClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadFuncionarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCadFuncionarios.Designer.cs">
       <DependentUpon>frmCadFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadProdutos.Designer.cs">
+      <DependentUpon>frmCadProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -64,22 +95,60 @@
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFuncionários.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFuncionários.Designer.cs">
+      <DependentUpon>frmFuncionários.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutos.Designer.cs">
+      <DependentUpon>frmProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSplash.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSplash.Designer.cs">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </Compile>
+    <Compile Include="mahoganyDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mahoganyDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAlteraFuncionario.resx">
+      <DependentUpon>frmAlteraFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlteraProdutos.resx">
+      <DependentUpon>frmAlteraProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadClientes.resx">
+      <DependentUpon>frmCadClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadFuncionarios.resx">
       <DependentUpon>frmCadFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadProdutos.resx">
+      <DependentUpon>frmCadProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFuncionários.resx">
+      <DependentUpon>frmFuncionários.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutos.resx">
+      <DependentUpon>frmProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
@@ -94,6 +163,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="mahoganyDataSet1.xsc">
+      <DependentUpon>mahoganyDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="mahoganyDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mahoganyDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mahoganyDataSet1.xss">
+      <DependentUpon>mahoganyDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

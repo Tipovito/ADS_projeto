@@ -26,3 +26,10 @@ C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\obj\
 C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\obj\Debug\Mahogany.csproj.CoreCompileInputs.cache
 C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\obj\Debug\Mahogany.exe
 C:\Users\victor.hsantos41\Desktop\ADS_projeto\ADS_projeto\Mahogany\Mahogany\obj\Debug\Mahogany.pdb
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmAlteraFuncionario.resources
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmCadProdutos.resources
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmAlteraProdutos.resources
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmFuncionários.resources
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmClientes.resources
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmProdutos.resources
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmCadClientes.resources
