@@ -47,6 +47,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="ClassUser.cs" />
+    <Compile Include="Conexao.cs" />
+    <Compile Include="frmAlteraCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlteraCliente.Designer.cs">
+      <DependentUpon>frmAlteraCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAlteraFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +84,12 @@
     </Compile>
     <Compile Include="frmCadProdutos.Designer.cs">
       <DependentUpon>frmCadProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaixa.Designer.cs">
+      <DependentUpon>frmCaixa.cs</DependentUpon>
     </Compile>
     <Compile Include="frmClientes.cs">
       <SubType>Form</SubType>
@@ -113,6 +127,12 @@
     <Compile Include="frmSplash.Designer.cs">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVendas.Designer.cs">
+      <DependentUpon>frmVendas.cs</DependentUpon>
+    </Compile>
     <Compile Include="mahoganyDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -120,6 +140,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAlteraCliente.resx">
+      <DependentUpon>frmAlteraCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAlteraFuncionario.resx">
       <DependentUpon>frmAlteraFuncionario.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadProdutos.resx">
       <DependentUpon>frmCadProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaixa.resx">
+      <DependentUpon>frmCaixa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
@@ -152,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVendas.resx">
+      <DependentUpon>frmVendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

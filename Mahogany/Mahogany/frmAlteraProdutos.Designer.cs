@@ -83,7 +83,8 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(200, 657);
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
+            this.label14.Location = new System.Drawing.Point(167, 545);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(559, 13);
             this.label14.TabIndex = 47;
@@ -96,7 +97,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.button3.Location = new System.Drawing.Point(542, 621);
+            this.button3.Location = new System.Drawing.Point(496, 509);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(76, 33);
             this.button3.TabIndex = 46;
@@ -175,7 +176,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.button1.Location = new System.Drawing.Point(329, 621);
+            this.button1.Location = new System.Drawing.Point(331, 509);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(76, 33);
             this.button1.TabIndex = 44;
@@ -276,7 +277,7 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(104, 149);
+            this.groupBox2.Location = new System.Drawing.Point(77, 123);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(753, 260);
             this.groupBox2.TabIndex = 43;
@@ -287,14 +288,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(250)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(951, 700);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(904, 576);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.groupBox2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAlteraProdutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAlteraProdutos";

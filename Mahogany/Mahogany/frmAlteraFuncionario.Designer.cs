@@ -77,7 +77,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(333, 17);
+            this.label9.Location = new System.Drawing.Point(324, 16);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(35, 13);
             this.label9.TabIndex = 20;
@@ -86,7 +86,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(25, 84);
+            this.label7.Location = new System.Drawing.Point(44, 71);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(44, 13);
             this.label7.TabIndex = 18;
@@ -95,7 +95,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(25, 162);
+            this.label8.Location = new System.Drawing.Point(44, 126);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 13);
             this.label8.TabIndex = 19;
@@ -104,7 +104,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(333, 84);
+            this.label10.Location = new System.Drawing.Point(324, 71);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(52, 13);
             this.label10.TabIndex = 21;
@@ -113,7 +113,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(74, 84);
+            this.label11.Location = new System.Drawing.Point(29, 76);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(74, 13);
             this.label11.TabIndex = 22;
@@ -122,7 +122,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(25, 17);
+            this.label6.Location = new System.Drawing.Point(44, 16);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 13);
             this.label6.TabIndex = 17;
@@ -143,9 +143,9 @@
             this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.textBox10);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Location = new System.Drawing.Point(100, 340);
+            this.groupBox2.Location = new System.Drawing.Point(135, 282);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(753, 231);
+            this.groupBox2.Size = new System.Drawing.Size(622, 193);
             this.groupBox2.TabIndex = 39;
             this.groupBox2.TabStop = false;
             // 
@@ -153,7 +153,7 @@
             // 
             this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_cargo2", true));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(336, 188);
+            this.comboBox1.Location = new System.Drawing.Point(327, 141);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(252, 21);
             this.comboBox1.TabIndex = 5;
@@ -171,7 +171,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(333, 162);
+            this.label15.Location = new System.Drawing.Point(324, 125);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(35, 13);
             this.label15.TabIndex = 32;
@@ -180,7 +180,7 @@
             // textBox8
             // 
             this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_fone", true));
-            this.textBox8.Location = new System.Drawing.Point(28, 188);
+            this.textBox8.Location = new System.Drawing.Point(47, 142);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(183, 20);
             this.textBox8.TabIndex = 2;
@@ -188,7 +188,7 @@
             // textBox6
             // 
             this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_end", true));
-            this.textBox6.Location = new System.Drawing.Point(28, 33);
+            this.textBox6.Location = new System.Drawing.Point(47, 33);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(183, 20);
             this.textBox6.TabIndex = 0;
@@ -196,7 +196,7 @@
             // textBox9
             // 
             this.textBox9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_email", true));
-            this.textBox9.Location = new System.Drawing.Point(336, 33);
+            this.textBox9.Location = new System.Drawing.Point(327, 33);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(252, 20);
             this.textBox9.TabIndex = 3;
@@ -204,7 +204,7 @@
             // textBox7
             // 
             this.textBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_numcasa", true));
-            this.textBox7.Location = new System.Drawing.Point(28, 109);
+            this.textBox7.Location = new System.Drawing.Point(47, 87);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(183, 20);
             this.textBox7.TabIndex = 1;
@@ -212,7 +212,7 @@
             // textBox10
             // 
             this.textBox10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_comiss", true));
-            this.textBox10.Location = new System.Drawing.Point(336, 109);
+            this.textBox10.Location = new System.Drawing.Point(327, 87);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(252, 20);
             this.textBox10.TabIndex = 4;
@@ -236,14 +236,14 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(47, 63);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(859, 241);
+            this.groupBox1.Size = new System.Drawing.Size(806, 187);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             // 
             // textBox2
             // 
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_NM", true));
-            this.textBox2.Location = new System.Drawing.Point(302, 44);
+            this.textBox2.Location = new System.Drawing.Point(280, 38);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(252, 20);
             this.textBox2.TabIndex = 3;
@@ -251,7 +251,7 @@
             // textBox1
             // 
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_CD", true));
-            this.textBox1.Location = new System.Drawing.Point(75, 44);
+            this.textBox1.Location = new System.Drawing.Point(32, 38);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(183, 20);
             this.textBox1.TabIndex = 0;
@@ -259,7 +259,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(299, 165);
+            this.label4.Location = new System.Drawing.Point(277, 130);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(23, 13);
             this.label4.TabIndex = 15;
@@ -268,7 +268,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(74, 165);
+            this.label12.Location = new System.Drawing.Point(31, 130);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(38, 13);
             this.label12.TabIndex = 23;
@@ -277,7 +277,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(299, 84);
+            this.label3.Location = new System.Drawing.Point(277, 76);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(27, 13);
             this.label3.TabIndex = 14;
@@ -286,7 +286,7 @@
             // textBox3
             // 
             this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_CPF", true));
-            this.textBox3.Location = new System.Drawing.Point(302, 114);
+            this.textBox3.Location = new System.Drawing.Point(280, 92);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(252, 20);
             this.textBox3.TabIndex = 4;
@@ -294,7 +294,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(598, 19);
+            this.label5.Location = new System.Drawing.Point(597, 22);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 13);
             this.label5.TabIndex = 16;
@@ -303,7 +303,7 @@
             // textBox11
             // 
             this.textBox11.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_login", true));
-            this.textBox11.Location = new System.Drawing.Point(75, 114);
+            this.textBox11.Location = new System.Drawing.Point(32, 92);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(183, 20);
             this.textBox11.TabIndex = 1;
@@ -311,7 +311,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(299, 19);
+            this.label2.Location = new System.Drawing.Point(275, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 13);
             this.label2.TabIndex = 13;
@@ -320,7 +320,7 @@
             // textBox4
             // 
             this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_RG", true));
-            this.textBox4.Location = new System.Drawing.Point(302, 196);
+            this.textBox4.Location = new System.Drawing.Point(280, 146);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(252, 20);
             this.textBox4.TabIndex = 5;
@@ -328,7 +328,7 @@
             // textBox12
             // 
             this.textBox12.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_senha", true));
-            this.textBox12.Location = new System.Drawing.Point(75, 196);
+            this.textBox12.Location = new System.Drawing.Point(32, 146);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(183, 20);
             this.textBox12.TabIndex = 2;
@@ -336,7 +336,7 @@
             // textBox5
             // 
             this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_DT_nasc", true));
-            this.textBox5.Location = new System.Drawing.Point(601, 44);
+            this.textBox5.Location = new System.Drawing.Point(600, 38);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(183, 20);
             this.textBox5.TabIndex = 6;
@@ -344,7 +344,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(74, 19);
+            this.label1.Location = new System.Drawing.Point(29, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 12;
@@ -353,7 +353,8 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(194, 657);
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
+            this.label14.Location = new System.Drawing.Point(167, 545);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(559, 13);
             this.label14.TabIndex = 38;
@@ -366,7 +367,7 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.button4.Location = new System.Drawing.Point(329, 621);
+            this.button4.Location = new System.Drawing.Point(331, 509);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 33);
             this.button4.TabIndex = 0;
@@ -380,7 +381,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.button2.Location = new System.Drawing.Point(542, 621);
+            this.button2.Location = new System.Drawing.Point(496, 509);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 33);
             this.button2.TabIndex = 1;
@@ -404,15 +405,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(250)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(951, 700);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(904, 576);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAlteraFuncionario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAlteraFuncionario";

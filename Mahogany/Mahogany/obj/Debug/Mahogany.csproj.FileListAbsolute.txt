@@ -33,3 +33,6 @@ C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmF
 C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmClientes.resources
 C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmProdutos.resources
 C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmCadClientes.resources
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmAlteraCliente.resources
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmCaixa.resources
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmVendas.resources

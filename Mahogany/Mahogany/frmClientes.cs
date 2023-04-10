@@ -23,7 +23,7 @@ namespace Mahogany
             this.clientesTableAdapter.Fill(this.mahoganyDataSet.clientes);
 
         }
-
+         
         private void button3_Click(object sender, EventArgs e)
         {
             frmMenu frmClientes = new frmMenu();
@@ -53,6 +53,21 @@ namespace Mahogany
                 MessageBox.Show("Não foi possível excluir registro.\n" + erro.Message.ToString());
                 //throw;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Class1.altera = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            this.Visible = false;
+            frmAlteraCliente pesq = new frmAlteraCliente();
+            pesq.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            frmCadClientes frmClientes = new frmCadClientes();
+            this.Hide();
+            frmClientes.ShowDialog();
         }
     }
 }

@@ -78,9 +78,11 @@ namespace Mahogany
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmFuncionários frmCadFuncionarios = new frmFuncionários();
-            this.Hide();
-            frmCadFuncionarios.ShowDialog();
+            
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
 
         }
     }   

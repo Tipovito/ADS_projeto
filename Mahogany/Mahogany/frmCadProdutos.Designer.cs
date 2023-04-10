@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
+            this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mahoganyDataSet = new Mahogany.mahoganyDataSet();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -51,12 +53,10 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.mahoganyDataSet = new Mahogany.mahoganyDataSet();
-            this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.produtosTableAdapter = new Mahogany.mahoganyDataSetTableAdapters.produtosTableAdapter();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -78,7 +78,7 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(104, 149);
+            this.groupBox2.Location = new System.Drawing.Point(77, 123);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(753, 260);
             this.groupBox2.TabIndex = 33;
@@ -91,6 +91,16 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(183, 20);
             this.textBox8.TabIndex = 15;
+            // 
+            // produtosBindingSource
+            // 
+            this.produtosBindingSource.DataMember = "produtos";
+            this.produtosBindingSource.DataSource = this.mahoganyDataSet;
+            // 
+            // mahoganyDataSet
+            // 
+            this.mahoganyDataSet.DataSetName = "mahoganyDataSet";
+            this.mahoganyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox7
             // 
@@ -226,7 +236,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.button1.Location = new System.Drawing.Point(304, 611);
+            this.button1.Location = new System.Drawing.Point(286, 509);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(76, 33);
             this.button1.TabIndex = 34;
@@ -240,7 +250,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.button2.Location = new System.Drawing.Point(438, 611);
+            this.button2.Location = new System.Drawing.Point(409, 509);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 33);
             this.button2.TabIndex = 35;
@@ -254,7 +264,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.button3.Location = new System.Drawing.Point(568, 611);
+            this.button3.Location = new System.Drawing.Point(530, 509);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(76, 33);
             this.button3.TabIndex = 36;
@@ -265,7 +275,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(200, 657);
+            this.label14.Location = new System.Drawing.Point(167, 545);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(559, 13);
             this.label14.TabIndex = 37;
@@ -283,16 +293,6 @@
             this.label13.TabIndex = 42;
             this.label13.Text = "Cadastro de Produtos";
             // 
-            // mahoganyDataSet
-            // 
-            this.mahoganyDataSet.DataSetName = "mahoganyDataSet";
-            this.mahoganyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // produtosBindingSource
-            // 
-            this.produtosBindingSource.DataMember = "produtos";
-            this.produtosBindingSource.DataSource = this.mahoganyDataSet;
-            // 
             // produtosTableAdapter
             // 
             this.produtosTableAdapter.ClearBeforeFill = true;
@@ -302,23 +302,24 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(250)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(951, 700);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(904, 576);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmCadProdutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadProdutos";
             this.Load += new System.EventHandler(this.frmCadProdutos_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

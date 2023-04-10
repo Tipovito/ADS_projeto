@@ -69,5 +69,10 @@ namespace Mahogany
             frmAlteraProdutos frmPesquisaProdutos = new frmAlteraProdutos();
             frmPesquisaProdutos.ShowDialog();
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
