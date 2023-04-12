@@ -191,6 +191,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(748, 20);
             this.textBox1.TabIndex = 40;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button4
             // 
@@ -278,18 +279,20 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.label6.Location = new System.Drawing.Point(25, 79);
+            this.label6.Location = new System.Drawing.Point(37, 75);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(901, 13);
+            this.label6.Size = new System.Drawing.Size(877, 13);
             this.label6.TabIndex = 52;
             this.label6.Text = "_________________________________________________________________________________" +
-    "____________________________________________________________________";
+    "________________________________________________________________";
             // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(250)))), ((int)(((byte)(239)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(951, 700);
             this.ControlBox = false;
             this.Controls.Add(this.label6);
@@ -303,6 +306,7 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

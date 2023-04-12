@@ -17,25 +17,7 @@ namespace Mahogany
             InitializeComponent();
         }
 
-        private void ClearAllBoxes()
-        {
-            Action<Control.ControlCollection> func = null;
-            func = (controls) =>
-            {
-                foreach (Control control in controls)
-                {
-
-                    if (control is TextBox || control is ComboBox)
-                    {
-                        control.ResetText();
-                    }
-                    else
-                        func(control.Controls);
-                }
-            };
-            func(Controls);
-        }
-
+       
         private void frmCadProdutos_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'mahoganyDataSet.produtos'. Você pode movê-la ou removê-la conforme necessário.
@@ -52,26 +34,35 @@ namespace Mahogany
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ClearAllBoxes();
+            ClearAllBoxes.LimparTudo(this);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             // Valida e salva o novo registro no banco de dados
-            this.Validate();
-            produtosBindingSource.EndEdit();
-            produtosTableAdapter.Update(mahoganyDataSet.produtos);
-            this.produtosTableAdapter.Fill(this.mahoganyDataSet.produtos);
-            produtosBindingSource.MoveLast();
 
-            // Adiciona um novo registro ao BindingSource
-            produtosBindingSource.AddNew();
+            if (ClearAllBoxes. AreTextBoxesFilled(this))
+            {
+                this.Validate();
+                produtosBindingSource.EndEdit();
+                produtosTableAdapter.Update(mahoganyDataSet.produtos);
+                this.produtosTableAdapter.Fill(this.mahoganyDataSet.produtos);
+                produtosBindingSource.MoveLast();
 
-            // Define o foco no TextBox2
-            textBox2.Focus();
+                // Adiciona um novo registro ao BindingSource
+                produtosBindingSource.AddNew();
 
-            // Exibe mensagem de sucesso
-            MessageBox.Show("Produto cadastrado com sucesso", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                // Define o foco no TextBox2
+                textBox2.Focus();
+
+                // Exibe mensagem de sucesso
+
+                MessageBox.Show("Produto cadastrado com sucesso", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                MessageBox.Show("Preencha todos os dados", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

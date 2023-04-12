@@ -17,25 +17,6 @@ namespace Mahogany
             InitializeComponent();
         }
 
-        private void ClearAllBoxes()
-        {
-            Action<Control.ControlCollection> func = null;
-            func = (controls) =>
-            {
-                foreach (Control control in controls)
-                {
-
-                    if (control is TextBox || control is ComboBox)
-                    {
-                        control.ResetText();
-                    }
-                    else
-                        func(control.Controls);
-                }
-            };
-            func(Controls);
-        }
-
         private void frmCadClientes_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'mahoganyDataSet.clientes'. Você pode movê-la ou removê-la conforme necessário.
@@ -55,26 +36,33 @@ namespace Mahogany
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ClearAllBoxes();
+            ClearAllBoxes.LimparTudo(this);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Valida e salva o novo registro no banco de dados
-            this.Validate();
-            clientesBindingSource.EndEdit();
-            clientesTableAdapter.Update(mahoganyDataSet.clientes);
-            this.clientesTableAdapter.Fill(this.mahoganyDataSet.clientes);
-            clientesBindingSource.MoveLast();
+            if (ClearAllBoxes.AreTextBoxesFilled(this))
+            {
+                // Valida e salva o novo registro no banco de dados
+                this.Validate();
+                clientesBindingSource.EndEdit();
+                clientesTableAdapter.Update(mahoganyDataSet.clientes);
+                this.clientesTableAdapter.Fill(this.mahoganyDataSet.clientes);
+                clientesBindingSource.MoveLast();
 
-            // Adiciona um novo registro ao BindingSource
-            clientesBindingSource.AddNew();
+                // Adiciona um novo registro ao BindingSource
+                clientesBindingSource.AddNew();
 
-            // Define o foco no TextBox2
-            textBox2.Focus();
+                // Define o foco no TextBox2
+                textBox2.Focus();
 
-            // Exibe mensagem de sucesso
-            MessageBox.Show("Cliente cadastrado com sucesso", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                // Exibe mensagem de sucesso
+                MessageBox.Show("Cliente cadastrado com sucesso", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                MessageBox.Show("Preencha todos os Dados", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

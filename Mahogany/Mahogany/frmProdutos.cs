@@ -74,5 +74,18 @@ namespace Mahogany
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length != 0)
+            {
+                produtosBindingSource.Filter = string.Format("prod_CD={0}", textBox1.Text);
+            }
+            else
+            {
+                produtosBindingSource.Filter = "";
+
+            }
+        }
     }
 }

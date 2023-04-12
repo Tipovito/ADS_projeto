@@ -69,5 +69,18 @@ namespace Mahogany
             this.Hide();
             frmClientes.ShowDialog();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length != 0)
+            {
+                clientesBindingSource.Filter = string.Format("clie_CD={0}", textBox1.Text);
+            }
+            else
+            {
+                clientesBindingSource.Filter = "";
+
+            }
+        }
     }
 }

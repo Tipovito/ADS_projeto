@@ -70,5 +70,18 @@ namespace Mahogany
             this.Hide();
             frmPesquisaFuncionarios.ShowDialog();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length != 0)
+            {
+                funcionariosBindingSource.Filter = string.Format("func_CD={0}", textBox1.Text);
+            }
+            else
+            {
+                funcionariosBindingSource.Filter = "";
+
+            }
+        }
     }
 }

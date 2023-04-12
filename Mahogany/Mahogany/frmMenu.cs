@@ -112,6 +112,7 @@ namespace Mahogany
 
         private void button2_Click(object sender, EventArgs e)
         {
+            AbrirForm(new frmVendas(), sender);
 
         }
 
@@ -122,6 +123,18 @@ namespace Mahogany
                 formAtual.Close();
                 Resetar();
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frmCaixa(), sender);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            frmBackRestore frmMenu = new frmBackRestore();
+            this.Hide();
+            frmMenu.ShowDialog();
         }
     }
 }

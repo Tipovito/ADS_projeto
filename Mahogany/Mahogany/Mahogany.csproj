@@ -32,6 +32,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>arvre.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Mahogany.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -48,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="ClassUser.cs" />
+    <Compile Include="ClearAllBoxes.cs" />
     <Compile Include="Conexao.cs" />
     <Compile Include="frmAlteraCliente.cs">
       <SubType>Form</SubType>
@@ -66,6 +76,12 @@
     </Compile>
     <Compile Include="frmAlteraProdutos.Designer.cs">
       <DependentUpon>frmAlteraProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackRestore.Designer.cs">
+      <DependentUpon>frmBackRestore.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCadClientes.cs">
       <SubType>Form</SubType>
@@ -148,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAlteraProdutos.resx">
       <DependentUpon>frmAlteraProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBackRestore.resx">
+      <DependentUpon>frmBackRestore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadClientes.resx">
       <DependentUpon>frmCadClientes.cs</DependentUpon>
@@ -245,6 +264,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\My project-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="arvre.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
