@@ -63,15 +63,15 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(151, 102);
+            this.textBox1.Location = new System.Drawing.Point(151, 73);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(359, 20);
-            this.textBox1.TabIndex = 1;
+            this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(600, 389);
+            this.textBox2.Location = new System.Drawing.Point(600, 360);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(322, 87);
@@ -85,10 +85,10 @@
             "Dinheiro",
             "Cartão de Débito",
             "Cartão de Crédito"});
-            this.comboBox1.Location = new System.Drawing.Point(600, 502);
+            this.comboBox1.Location = new System.Drawing.Point(600, 473);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(322, 21);
-            this.comboBox1.TabIndex = 4;
+            this.comboBox1.TabIndex = 3;
             // 
             // produtosBindingSource
             // 
@@ -107,7 +107,7 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(957, 318);
+            this.listBox1.Location = new System.Drawing.Point(954, 304);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(120, 95);
             this.listBox1.TabIndex = 10;
@@ -116,7 +116,7 @@
             // 
             this.Produtos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Produtos.FormattingEnabled = true;
-            this.Produtos.Location = new System.Drawing.Point(600, 100);
+            this.Produtos.Location = new System.Drawing.Point(600, 71);
             this.Produtos.Name = "Produtos";
             this.Produtos.Size = new System.Drawing.Size(322, 262);
             this.Produtos.TabIndex = 11;
@@ -125,7 +125,7 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(226)))), ((int)(((byte)(211)))));
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(27, 132);
+            this.groupBox1.Location = new System.Drawing.Point(27, 103);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(483, 391);
             this.groupBox1.TabIndex = 47;
@@ -151,55 +151,55 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(443, 346);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.TabIndex = 0;
             // 
             // prodCDDataGridViewTextBoxColumn1
             // 
             this.prodCDDataGridViewTextBoxColumn1.DataPropertyName = "prod_CD";
-            this.prodCDDataGridViewTextBoxColumn1.HeaderText = "prod_CD";
+            this.prodCDDataGridViewTextBoxColumn1.HeaderText = "Código";
             this.prodCDDataGridViewTextBoxColumn1.Name = "prodCDDataGridViewTextBoxColumn1";
             this.prodCDDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // proddescDataGridViewTextBoxColumn
             // 
             this.proddescDataGridViewTextBoxColumn.DataPropertyName = "prod_desc";
-            this.proddescDataGridViewTextBoxColumn.HeaderText = "prod_desc";
+            this.proddescDataGridViewTextBoxColumn.HeaderText = "Descrição";
             this.proddescDataGridViewTextBoxColumn.Name = "proddescDataGridViewTextBoxColumn";
             // 
             // prodtipoDataGridViewTextBoxColumn
             // 
             this.prodtipoDataGridViewTextBoxColumn.DataPropertyName = "prod_tipo";
-            this.prodtipoDataGridViewTextBoxColumn.HeaderText = "prod_tipo";
+            this.prodtipoDataGridViewTextBoxColumn.HeaderText = "Tipo";
             this.prodtipoDataGridViewTextBoxColumn.Name = "prodtipoDataGridViewTextBoxColumn";
             // 
             // prodmarcaDataGridViewTextBoxColumn
             // 
             this.prodmarcaDataGridViewTextBoxColumn.DataPropertyName = "prod_marca";
-            this.prodmarcaDataGridViewTextBoxColumn.HeaderText = "prod_marca";
+            this.prodmarcaDataGridViewTextBoxColumn.HeaderText = "Marca";
             this.prodmarcaDataGridViewTextBoxColumn.Name = "prodmarcaDataGridViewTextBoxColumn";
             // 
             // prodmateDataGridViewTextBoxColumn
             // 
             this.prodmateDataGridViewTextBoxColumn.DataPropertyName = "prod_mate";
-            this.prodmateDataGridViewTextBoxColumn.HeaderText = "prod_mate";
+            this.prodmateDataGridViewTextBoxColumn.HeaderText = "Material";
             this.prodmateDataGridViewTextBoxColumn.Name = "prodmateDataGridViewTextBoxColumn";
             // 
             // prodQTDataGridViewTextBoxColumn1
             // 
             this.prodQTDataGridViewTextBoxColumn1.DataPropertyName = "prod_QT";
-            this.prodQTDataGridViewTextBoxColumn1.HeaderText = "prod_QT";
+            this.prodQTDataGridViewTextBoxColumn1.HeaderText = "Quantidade";
             this.prodQTDataGridViewTextBoxColumn1.Name = "prodQTDataGridViewTextBoxColumn1";
             // 
             // prodVLaquisiDataGridViewTextBoxColumn
             // 
             this.prodVLaquisiDataGridViewTextBoxColumn.DataPropertyName = "prod_VL_aquisi";
-            this.prodVLaquisiDataGridViewTextBoxColumn.HeaderText = "prod_VL_aquisi";
+            this.prodVLaquisiDataGridViewTextBoxColumn.HeaderText = "Valor Aquisição";
             this.prodVLaquisiDataGridViewTextBoxColumn.Name = "prodVLaquisiDataGridViewTextBoxColumn";
             // 
             // prodVLvendaDataGridViewTextBoxColumn
             // 
             this.prodVLvendaDataGridViewTextBoxColumn.DataPropertyName = "prod_VL_venda";
-            this.prodVLvendaDataGridViewTextBoxColumn.HeaderText = "prod_VL_venda";
+            this.prodVLvendaDataGridViewTextBoxColumn.HeaderText = "Valor Venda";
             this.prodVLvendaDataGridViewTextBoxColumn.Name = "prodVLvendaDataGridViewTextBoxColumn";
             // 
             // button5
@@ -208,10 +208,10 @@
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.button5.Location = new System.Drawing.Point(27, 563);
+            this.button5.Location = new System.Drawing.Point(27, 534);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(109, 33);
-            this.button5.TabIndex = 48;
+            this.button5.TabIndex = 1;
             this.button5.Text = "Adicionar";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -222,10 +222,10 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.button1.Location = new System.Drawing.Point(172, 563);
+            this.button1.Location = new System.Drawing.Point(172, 534);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 33);
-            this.button1.TabIndex = 49;
+            this.button1.TabIndex = 2;
             this.button1.Text = "Remover";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
@@ -236,10 +236,10 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.button3.Location = new System.Drawing.Point(813, 563);
+            this.button3.Location = new System.Drawing.Point(813, 534);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 33);
-            this.button3.TabIndex = 51;
+            this.button3.TabIndex = 4;
             this.button3.Text = "Finalizar";
             this.button3.UseVisualStyleBackColor = false;
             // 
@@ -257,7 +257,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.label2.Location = new System.Drawing.Point(24, 104);
+            this.label2.Location = new System.Drawing.Point(24, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 16);
             this.label2.TabIndex = 54;
@@ -286,7 +286,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCaixa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmCaixa";
             this.Load += new System.EventHandler(this.frmCaixa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).EndInit();
@@ -314,6 +313,7 @@
         private System.Windows.Forms.BindingSource controlcaixaBindingSource;
         private mahoganyDataSetTableAdapters.control_caixaTableAdapter control_caixaTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn prodCDDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn proddescDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn prodtipoDataGridViewTextBoxColumn;
@@ -322,6 +322,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn prodQTDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn prodVLaquisiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn prodVLvendaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label label2;
     }
 }

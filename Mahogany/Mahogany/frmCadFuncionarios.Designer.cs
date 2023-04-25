@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.funcionariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mahoganyDataSet = new Mahogany.mahoganyDataSet();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -42,7 +41,6 @@
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -71,14 +69,6 @@
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
-            // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_CD", true));
-            this.textBox1.Location = new System.Drawing.Point(31, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 20);
-            this.textBox1.TabIndex = 0;
-            // 
             // funcionariosBindingSource
             // 
             this.funcionariosBindingSource.DataMember = "funcionarios";
@@ -100,15 +90,15 @@
             // textBox4
             // 
             this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_RG", true));
-            this.textBox4.Location = new System.Drawing.Point(278, 137);
+            this.textBox4.Location = new System.Drawing.Point(590, 35);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(252, 20);
+            this.textBox4.Size = new System.Drawing.Size(183, 20);
             this.textBox4.TabIndex = 5;
             // 
             // textBox5
             // 
             this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_DT_nasc", true));
-            this.textBox5.Location = new System.Drawing.Point(595, 35);
+            this.textBox5.Location = new System.Drawing.Point(590, 87);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(183, 20);
             this.textBox5.TabIndex = 6;
@@ -156,7 +146,7 @@
             // textBox11
             // 
             this.textBox11.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_login", true));
-            this.textBox11.Location = new System.Drawing.Point(31, 87);
+            this.textBox11.Location = new System.Drawing.Point(30, 37);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(183, 20);
             this.textBox11.TabIndex = 1;
@@ -164,19 +154,10 @@
             // textBox12
             // 
             this.textBox12.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_senha", true));
-            this.textBox12.Location = new System.Drawing.Point(33, 137);
+            this.textBox12.Location = new System.Drawing.Point(32, 87);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(183, 20);
             this.textBox12.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Código";
             // 
             // label2
             // 
@@ -199,7 +180,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(275, 121);
+            this.label4.Location = new System.Drawing.Point(587, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(23, 13);
             this.label4.TabIndex = 15;
@@ -208,7 +189,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(592, 19);
+            this.label5.Location = new System.Drawing.Point(587, 71);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 13);
             this.label5.TabIndex = 16;
@@ -262,7 +243,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(30, 71);
+            this.label11.Location = new System.Drawing.Point(29, 21);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(74, 13);
             this.label11.TabIndex = 22;
@@ -271,7 +252,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(30, 121);
+            this.label12.Location = new System.Drawing.Point(29, 71);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(38, 13);
             this.label12.TabIndex = 23;
@@ -324,7 +305,6 @@
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(226)))), ((int)(((byte)(211)))));
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label3);
@@ -335,10 +315,9 @@
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.textBox12);
             this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(51, 66);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(806, 187);
+            this.groupBox1.Size = new System.Drawing.Size(806, 178);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
             // 
@@ -433,6 +412,7 @@
             this.MinimizeBox = false;
             this.Name = "frmCadFuncionarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cadastro de Funcionários";
             this.Load += new System.EventHandler(this.frmCadFuncionarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.funcionariosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).EndInit();
@@ -446,8 +426,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
@@ -458,7 +436,6 @@
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

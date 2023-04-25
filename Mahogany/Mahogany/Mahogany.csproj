@@ -65,6 +65,12 @@
     <Compile Include="frmAlteraCliente.Designer.cs">
       <DependentUpon>frmAlteraCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAlteraFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlteraFornecedores.Designer.cs">
+      <DependentUpon>frmAlteraFornecedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAlteraFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,12 @@
     <Compile Include="frmCadClientes.Designer.cs">
       <DependentUpon>frmCadClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCadFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadFornecedores.Designer.cs">
+      <DependentUpon>frmCadFornecedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadFuncionarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +124,18 @@
     </Compile>
     <Compile Include="frmClientes.Designer.cs">
       <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstoque.Designer.cs">
+      <DependentUpon>frmEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFornecedores.Designer.cs">
+      <DependentUpon>frmFornecedores.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -159,6 +183,9 @@
     <EmbeddedResource Include="frmAlteraCliente.resx">
       <DependentUpon>frmAlteraCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAlteraFornecedores.resx">
+      <DependentUpon>frmAlteraFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAlteraFuncionario.resx">
       <DependentUpon>frmAlteraFuncionario.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +198,9 @@
     <EmbeddedResource Include="frmCadClientes.resx">
       <DependentUpon>frmCadClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCadFornecedores.resx">
+      <DependentUpon>frmCadFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadFuncionarios.resx">
       <DependentUpon>frmCadFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +212,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstoque.resx">
+      <DependentUpon>frmEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFornecedores.resx">
+      <DependentUpon>frmFornecedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

@@ -417,7 +417,7 @@
             this.MinimizeBox = false;
             this.Name = "frmAlteraFuncionario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmAlteraFuncionario";
+            this.Text = "Alterar Funcionarios";
             this.Load += new System.EventHandler(this.frmAlteraFuncionario_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

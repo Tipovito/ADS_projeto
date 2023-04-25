@@ -70,7 +70,7 @@
             this.textBox1.Location = new System.Drawing.Point(132, 145);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(748, 20);
-            this.textBox1.TabIndex = 43;
+            this.textBox1.TabIndex = 1;
             // 
             // button4
             // 
@@ -83,7 +83,7 @@
             this.button4.Location = new System.Drawing.Point(90, 139);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(30, 30);
-            this.button4.TabIndex = 44;
+            this.button4.TabIndex = 0;
             this.button4.UseVisualStyleBackColor = false;
             // 
             // label6
@@ -141,7 +141,7 @@
             this.button2.Location = new System.Drawing.Point(553, 597);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(47, 47);
-            this.button2.TabIndex = 54;
+            this.button2.TabIndex = 3;
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
@@ -155,7 +155,7 @@
             this.button1.Location = new System.Drawing.Point(347, 597);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(47, 47);
-            this.button1.TabIndex = 53;
+            this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = false;
             // 
             // frmVendas
@@ -180,7 +180,7 @@
             this.MinimizeBox = false;
             this.Name = "frmVendas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pesquisa de Vendas";
+            this.Text = "histórico de Vendas";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

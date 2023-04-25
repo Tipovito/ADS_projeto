@@ -23,15 +23,16 @@ namespace Mahogany
             this.clientesTableAdapter.Fill(this.mahoganyDataSet.clientes);
             // TODO: esta linha de código carrega dados na tabela 'mahoganyDataSet.clientes'. Você pode movê-la ou removê-la conforme necessário.
             this.clientesTableAdapter.Fill(this.mahoganyDataSet.clientes);
+            // TODO: esta linha de código carrega dados na tabela 'mahoganyDataSet.clientes'. Você pode movê-la ou removê-la conforme necessário.
+            this.clientesTableAdapter.Fill(this.mahoganyDataSet.clientes);
             clientesBindingSource.AddNew();
-
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            frmClientes frmCadClientes = new frmClientes();
+            frmMenu frmClientes = new frmMenu();
             this.Hide();
-            frmCadClientes.ShowDialog();
+            frmClientes.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -63,6 +64,11 @@ namespace Mahogany
             {
                 MessageBox.Show("Preencha todos os Dados", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

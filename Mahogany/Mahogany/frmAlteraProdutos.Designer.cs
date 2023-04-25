@@ -299,7 +299,7 @@
             this.MinimizeBox = false;
             this.Name = "frmAlteraProdutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmAlteraProdutos";
+            this.Text = "Altera Produtos";
             this.Load += new System.EventHandler(this.frmAlteraProdutos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).EndInit();

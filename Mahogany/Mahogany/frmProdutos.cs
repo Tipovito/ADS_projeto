@@ -87,5 +87,13 @@ namespace Mahogany
 
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            frmCadFornecedores frmProdutos = new frmCadFornecedores();
+            this.Hide();
+            frmProdutos.ShowDialog();
+
+        }
     }
 }

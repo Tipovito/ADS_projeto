@@ -136,5 +136,15 @@ namespace Mahogany
             this.Hide();
             frmMenu.ShowDialog();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frmFornecedores(), sender);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frmEstoque(), sender);
+        }
     }
 }

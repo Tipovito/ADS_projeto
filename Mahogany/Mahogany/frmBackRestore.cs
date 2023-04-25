@@ -25,7 +25,7 @@ namespace Mahogany
 
         public frmBackRestore()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
 
         private void frmBackRestore_Load(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace Mahogany
             button3.Enabled = false;
             button7.Enabled = false;
             textBox4.Enabled = false;
-            textBox5.Enabled = false;
+            textBox5.Enabled = false;            
         }
 
         private void button1_Click(object sender, EventArgs e)

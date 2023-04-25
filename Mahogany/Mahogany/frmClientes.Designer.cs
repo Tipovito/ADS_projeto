@@ -82,7 +82,7 @@
             this.button5.Location = new System.Drawing.Point(71, 27);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(45, 45);
-            this.button5.TabIndex = 44;
+            this.button5.TabIndex = 4;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -123,56 +123,56 @@
             // clieCDDataGridViewTextBoxColumn
             // 
             this.clieCDDataGridViewTextBoxColumn.DataPropertyName = "clie_CD";
-            this.clieCDDataGridViewTextBoxColumn.HeaderText = "clie_CD";
+            this.clieCDDataGridViewTextBoxColumn.HeaderText = "Código";
             this.clieCDDataGridViewTextBoxColumn.Name = "clieCDDataGridViewTextBoxColumn";
             this.clieCDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // clieNMDataGridViewTextBoxColumn
             // 
             this.clieNMDataGridViewTextBoxColumn.DataPropertyName = "clie_NM";
-            this.clieNMDataGridViewTextBoxColumn.HeaderText = "clie_NM";
+            this.clieNMDataGridViewTextBoxColumn.HeaderText = "Nome";
             this.clieNMDataGridViewTextBoxColumn.Name = "clieNMDataGridViewTextBoxColumn";
             // 
             // clieCPFDataGridViewTextBoxColumn
             // 
             this.clieCPFDataGridViewTextBoxColumn.DataPropertyName = "clie_CPF";
-            this.clieCPFDataGridViewTextBoxColumn.HeaderText = "clie_CPF";
+            this.clieCPFDataGridViewTextBoxColumn.HeaderText = "CPF";
             this.clieCPFDataGridViewTextBoxColumn.Name = "clieCPFDataGridViewTextBoxColumn";
             // 
             // clieRGDataGridViewTextBoxColumn
             // 
             this.clieRGDataGridViewTextBoxColumn.DataPropertyName = "clie_RG";
-            this.clieRGDataGridViewTextBoxColumn.HeaderText = "clie_RG";
+            this.clieRGDataGridViewTextBoxColumn.HeaderText = "RG";
             this.clieRGDataGridViewTextBoxColumn.Name = "clieRGDataGridViewTextBoxColumn";
             // 
             // clieDTnascDataGridViewTextBoxColumn
             // 
             this.clieDTnascDataGridViewTextBoxColumn.DataPropertyName = "clie_DT_nasc";
-            this.clieDTnascDataGridViewTextBoxColumn.HeaderText = "clie_DT_nasc";
+            this.clieDTnascDataGridViewTextBoxColumn.HeaderText = "Data de Nascimento";
             this.clieDTnascDataGridViewTextBoxColumn.Name = "clieDTnascDataGridViewTextBoxColumn";
             // 
             // cliefoneDataGridViewTextBoxColumn
             // 
             this.cliefoneDataGridViewTextBoxColumn.DataPropertyName = "clie_fone";
-            this.cliefoneDataGridViewTextBoxColumn.HeaderText = "clie_fone";
+            this.cliefoneDataGridViewTextBoxColumn.HeaderText = "Telefone";
             this.cliefoneDataGridViewTextBoxColumn.Name = "cliefoneDataGridViewTextBoxColumn";
             // 
             // clieemailDataGridViewTextBoxColumn
             // 
             this.clieemailDataGridViewTextBoxColumn.DataPropertyName = "clie_email";
-            this.clieemailDataGridViewTextBoxColumn.HeaderText = "clie_email";
+            this.clieemailDataGridViewTextBoxColumn.HeaderText = "E-mail";
             this.clieemailDataGridViewTextBoxColumn.Name = "clieemailDataGridViewTextBoxColumn";
             // 
             // clierefDataGridViewTextBoxColumn
             // 
             this.clierefDataGridViewTextBoxColumn.DataPropertyName = "clie_ref";
-            this.clierefDataGridViewTextBoxColumn.HeaderText = "clie_ref";
+            this.clierefDataGridViewTextBoxColumn.HeaderText = "Referência";
             this.clierefDataGridViewTextBoxColumn.Name = "clierefDataGridViewTextBoxColumn";
             // 
             // cliefonerefDataGridViewTextBoxColumn
             // 
             this.cliefonerefDataGridViewTextBoxColumn.DataPropertyName = "clie_fone_ref";
-            this.cliefonerefDataGridViewTextBoxColumn.HeaderText = "clie_fone_ref";
+            this.cliefonerefDataGridViewTextBoxColumn.HeaderText = "Telefone Referência";
             this.cliefonerefDataGridViewTextBoxColumn.Name = "cliefonerefDataGridViewTextBoxColumn";
             // 
             // clientesBindingSource
@@ -190,7 +190,7 @@
             this.textBox1.Location = new System.Drawing.Point(132, 144);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(748, 20);
-            this.textBox1.TabIndex = 40;
+            this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button4
@@ -204,7 +204,7 @@
             this.button4.Location = new System.Drawing.Point(90, 138);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(30, 30);
-            this.button4.TabIndex = 39;
+            this.button4.TabIndex = 0;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -252,7 +252,7 @@
             this.button2.Location = new System.Drawing.Point(553, 600);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(47, 47);
-            this.button2.TabIndex = 42;
+            this.button2.TabIndex = 3;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -267,7 +267,7 @@
             this.button1.Location = new System.Drawing.Point(349, 600);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(47, 47);
-            this.button1.TabIndex = 41;
+            this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -337,6 +337,7 @@
         private mahoganyDataSet mahoganyDataSet;
         private System.Windows.Forms.BindingSource clientesBindingSource;
         private mahoganyDataSetTableAdapters.clientesTableAdapter clientesTableAdapter;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridViewTextBoxColumn clieCDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn clieNMDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn clieCPFDataGridViewTextBoxColumn;
@@ -346,6 +347,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clieemailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn clierefDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cliefonerefDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label label6;
     }
 }

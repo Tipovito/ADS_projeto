@@ -37,3 +37,7 @@ C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.exe
 C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.pdb
 C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\bin\Debug\Mahogany.pdb
 C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.csproj.AssemblyReference.cache
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmCadFornecedores.resources
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmFornecedores.resources
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmAlteraFornecedores.resources
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmEstoque.resources

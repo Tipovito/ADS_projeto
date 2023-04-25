@@ -248,9 +248,9 @@
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
             this.label13.Location = new System.Drawing.Point(12, 9);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(278, 34);
+            this.label13.Size = new System.Drawing.Size(203, 34);
             this.label13.TabIndex = 54;
-            this.label13.Text = "Cadastro de Clientes";
+            this.label13.Text = "Altera Clientes";
             // 
             // label14
             // 
@@ -320,7 +320,7 @@
             this.MinimizeBox = false;
             this.Name = "frmAlteraCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmAlteraCliente";
+            this.Text = "Alterar Cliente";
             this.Load += new System.EventHandler(this.frmAlteraCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();

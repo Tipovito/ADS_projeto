@@ -23,7 +23,8 @@ namespace Mahogany
             this.control_caixaTableAdapter.Fill(this.mahoganyDataSet.control_caixa);
             // TODO: esta linha de código carrega dados na tabela 'mahoganyDataSet.produtos'. Você pode movê-la ou removê-la conforme necessário.
             this.produtosTableAdapter.Fill(this.mahoganyDataSet.produtos);
-            produtosBindingSource.AddNew();                       
+            controlcaixaBindingSource.AddNew();
+            dataGridView1.Columns[7].DefaultCellStyle.Format = "C2";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,8 +73,7 @@ namespace Mahogany
             }
             else
             {
-                //produtosBindingSource.Filter = "";
-
+                produtosBindingSource.Filter = "";
             }
         }
 
