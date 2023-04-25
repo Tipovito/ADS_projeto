@@ -28,9 +28,6 @@ func_cargo		varchar(30)		not null,
 )
 go
 
-alter table madera.funcionarios
-add func_cargo		varchar(30)		not null
-
 create table madera.fornecedores
 (
 forn_CD			int				primary key			identity(1,1),
@@ -73,20 +70,8 @@ prod_VL_venda	money			not null,
 )
 go
 
-create table madera.pedidos
-(
-pedi_CD			int				primary key			identity(1,1),
-pedi_DT			date			not null,
-clie_CD			int				foreign				key references madera.clientes,
-clie_NM			varchar(40)		not null,
-clie_fone		varchar(20)		not null,
-prod_CD			int				foreign				key references madera.produtos,
-prod_desc		varchar(40)		not null,
-pedi_end_entre	varchar(40)		not null,
-pedi_DT_entre	date			not null,
-pedi_status		varchar(20)		not null,
-)
-go
+select * from madera.produtos
+
 --Tabelas-Controles--
 
 create table madera.control_caixa
@@ -133,5 +118,4 @@ go
 --use master
 --drop database mahogany
 --drop table madera.cliente
-
-select * from madera.produtos
+--select * from madera.produtos
