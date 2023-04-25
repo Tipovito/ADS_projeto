@@ -70,7 +70,7 @@ namespace Mahogany
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
 
         private void label15_Click(object sender, EventArgs e)

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEstoque));
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -41,8 +42,23 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.mahoganyDataSet = new Mahogany.mahoganyDataSet();
+            this.controlestoqueBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.control_estoqueTableAdapter = new Mahogany.mahoganyDataSetTableAdapters.control_estoqueTableAdapter();
+            this.estoCDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prodCDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proddescDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estoDTentraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estoDTsaidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estoQTentraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estoQTsaidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fornCDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fornRsocialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estouniDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.controlestoqueBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button5
@@ -58,6 +74,7 @@
             this.button5.Size = new System.Drawing.Size(45, 45);
             this.button5.TabIndex = 4;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -122,9 +139,22 @@
             // dataGridView1
             // 
             this.dataGridView1.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(250)))), ((int)(((byte)(239)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.estoCDDataGridViewTextBoxColumn,
+            this.prodCDDataGridViewTextBoxColumn,
+            this.proddescDataGridViewTextBoxColumn,
+            this.estoDTentraDataGridViewTextBoxColumn,
+            this.estoDTsaidaDataGridViewTextBoxColumn,
+            this.estoQTentraDataGridViewTextBoxColumn,
+            this.estoQTsaidaDataGridViewTextBoxColumn,
+            this.fornCDDataGridViewTextBoxColumn,
+            this.fornRsocialDataGridViewTextBoxColumn,
+            this.estouniDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.controlestoqueBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(19, 19);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -185,6 +215,81 @@
             this.label6.Text = "_________________________________________________________________________________" +
     "____________________________________________________________________";
             // 
+            // mahoganyDataSet
+            // 
+            this.mahoganyDataSet.DataSetName = "mahoganyDataSet";
+            this.mahoganyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // controlestoqueBindingSource
+            // 
+            this.controlestoqueBindingSource.DataMember = "control_estoque";
+            this.controlestoqueBindingSource.DataSource = this.mahoganyDataSet;
+            // 
+            // control_estoqueTableAdapter
+            // 
+            this.control_estoqueTableAdapter.ClearBeforeFill = true;
+            // 
+            // estoCDDataGridViewTextBoxColumn
+            // 
+            this.estoCDDataGridViewTextBoxColumn.DataPropertyName = "esto_CD";
+            this.estoCDDataGridViewTextBoxColumn.HeaderText = "Código";
+            this.estoCDDataGridViewTextBoxColumn.Name = "estoCDDataGridViewTextBoxColumn";
+            this.estoCDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // prodCDDataGridViewTextBoxColumn
+            // 
+            this.prodCDDataGridViewTextBoxColumn.DataPropertyName = "prod_CD";
+            this.prodCDDataGridViewTextBoxColumn.HeaderText = "Código de Produto";
+            this.prodCDDataGridViewTextBoxColumn.Name = "prodCDDataGridViewTextBoxColumn";
+            // 
+            // proddescDataGridViewTextBoxColumn
+            // 
+            this.proddescDataGridViewTextBoxColumn.DataPropertyName = "prod_desc";
+            this.proddescDataGridViewTextBoxColumn.HeaderText = "Descrição do Produto";
+            this.proddescDataGridViewTextBoxColumn.Name = "proddescDataGridViewTextBoxColumn";
+            // 
+            // estoDTentraDataGridViewTextBoxColumn
+            // 
+            this.estoDTentraDataGridViewTextBoxColumn.DataPropertyName = "esto_DT_entra";
+            this.estoDTentraDataGridViewTextBoxColumn.HeaderText = "Data de Entrada";
+            this.estoDTentraDataGridViewTextBoxColumn.Name = "estoDTentraDataGridViewTextBoxColumn";
+            // 
+            // estoDTsaidaDataGridViewTextBoxColumn
+            // 
+            this.estoDTsaidaDataGridViewTextBoxColumn.DataPropertyName = "esto_DT_saida";
+            this.estoDTsaidaDataGridViewTextBoxColumn.HeaderText = "Data de Saída";
+            this.estoDTsaidaDataGridViewTextBoxColumn.Name = "estoDTsaidaDataGridViewTextBoxColumn";
+            // 
+            // estoQTentraDataGridViewTextBoxColumn
+            // 
+            this.estoQTentraDataGridViewTextBoxColumn.DataPropertyName = "esto_QT_entra";
+            this.estoQTentraDataGridViewTextBoxColumn.HeaderText = "Quantidade de Entrada";
+            this.estoQTentraDataGridViewTextBoxColumn.Name = "estoQTentraDataGridViewTextBoxColumn";
+            // 
+            // estoQTsaidaDataGridViewTextBoxColumn
+            // 
+            this.estoQTsaidaDataGridViewTextBoxColumn.DataPropertyName = "esto_QT_saida";
+            this.estoQTsaidaDataGridViewTextBoxColumn.HeaderText = "Quantidade de Saída";
+            this.estoQTsaidaDataGridViewTextBoxColumn.Name = "estoQTsaidaDataGridViewTextBoxColumn";
+            // 
+            // fornCDDataGridViewTextBoxColumn
+            // 
+            this.fornCDDataGridViewTextBoxColumn.DataPropertyName = "forn_CD";
+            this.fornCDDataGridViewTextBoxColumn.HeaderText = "Código de Fornecedor";
+            this.fornCDDataGridViewTextBoxColumn.Name = "fornCDDataGridViewTextBoxColumn";
+            // 
+            // fornRsocialDataGridViewTextBoxColumn
+            // 
+            this.fornRsocialDataGridViewTextBoxColumn.DataPropertyName = "forn_Rsocial";
+            this.fornRsocialDataGridViewTextBoxColumn.HeaderText = "Razão Social de Fornecedor";
+            this.fornRsocialDataGridViewTextBoxColumn.Name = "fornRsocialDataGridViewTextBoxColumn";
+            // 
+            // estouniDataGridViewTextBoxColumn
+            // 
+            this.estouniDataGridViewTextBoxColumn.DataPropertyName = "esto_uni";
+            this.estouniDataGridViewTextBoxColumn.HeaderText = "Unidade de Estoque";
+            this.estouniDataGridViewTextBoxColumn.Name = "estouniDataGridViewTextBoxColumn";
+            // 
             // frmEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,6 +316,8 @@
             this.Load += new System.EventHandler(this.frmEstoque_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.controlestoqueBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,5 +337,18 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
+        private mahoganyDataSet mahoganyDataSet;
+        private System.Windows.Forms.BindingSource controlestoqueBindingSource;
+        private mahoganyDataSetTableAdapters.control_estoqueTableAdapter control_estoqueTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estoCDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prodCDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn proddescDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estoDTentraDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estoDTsaidaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estoQTentraDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estoQTsaidaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fornCDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fornRsocialDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estouniDataGridViewTextBoxColumn;
     }
 }

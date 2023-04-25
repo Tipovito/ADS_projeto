@@ -26,13 +26,15 @@ namespace Mahogany
             // TODO: esta linha de código carrega dados na tabela 'mahoganyDataSet.clientes'. Você pode movê-la ou removê-la conforme necessário.
             this.clientesTableAdapter.Fill(this.mahoganyDataSet.clientes);
             clientesBindingSource.AddNew();
+
+            maskedTextBox1.Mask = "00/00/0000";
+            maskedTextBox2.Mask = "00.000.000-0";
+            maskedTextBox3.Mask = "00-00000000";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            frmMenu frmClientes = new frmMenu();
-            this.Hide();
-            frmClientes.ShowDialog();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -67,6 +69,11 @@ namespace Mahogany
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }

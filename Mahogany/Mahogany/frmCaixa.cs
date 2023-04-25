@@ -25,6 +25,7 @@ namespace Mahogany
             this.produtosTableAdapter.Fill(this.mahoganyDataSet.produtos);
             controlcaixaBindingSource.AddNew();
             dataGridView1.Columns[7].DefaultCellStyle.Format = "C2";
+            dataGridView1.Columns[6].DefaultCellStyle.Format = "C2";
         }
 
         private void button1_Click(object sender, EventArgs e)

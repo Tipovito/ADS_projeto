@@ -37,9 +37,7 @@ namespace Mahogany
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmMenu frmAltera = new frmMenu();
-            this.Hide();
-            frmAltera.ShowDialog();
+            this.Close();
         }
 
         private void frmAlteraFuncionario_Load(object sender, EventArgs e)

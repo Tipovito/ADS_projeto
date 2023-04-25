@@ -70,8 +70,6 @@ prod_VL_venda	money			not null,
 )
 go
 
-select * from madera.produtos
-
 --Tabelas-Controles--
 
 create table madera.control_caixa

@@ -37,9 +37,7 @@ namespace Mahogany
 
         private void button3_Click(object sender, EventArgs e)
         {
-            frmMenu frmAlteraCliente = new frmMenu();
-            this.Hide();
-            frmAlteraCliente.ShowDialog();
+            this.Close();
         }
 
         private void frmAlteraCliente_Load(object sender, EventArgs e)

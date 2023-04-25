@@ -46,9 +46,7 @@ namespace Mahogany
 
         private void button3_Click(object sender, EventArgs e)
         {
-            frmMenu frmCadprodutos = new frmMenu();
-            this.Hide();
-            frmCadprodutos.ShowDialog();
+            this.Close();
         }
     }
 }

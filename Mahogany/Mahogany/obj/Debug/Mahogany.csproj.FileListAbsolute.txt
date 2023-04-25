@@ -41,3 +41,4 @@ C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmC
 C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmFornecedores.resources
 C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmAlteraFornecedores.resources
 C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmEstoque.resources
+C:\Users\victor.hsantos41\source\repos\Mahogany\Mahogany\obj\Debug\Mahogany.frmCadEstoque.resources

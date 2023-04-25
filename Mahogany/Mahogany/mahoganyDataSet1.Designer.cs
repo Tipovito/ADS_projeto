@@ -2476,8 +2476,6 @@ namespace Mahogany {
             
             private global::System.Data.DataColumn columnfunc_senha;
             
-            private global::System.Data.DataColumn columnfunc_cargo2;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public funcionariosDataTable() {
@@ -2609,14 +2607,6 @@ namespace Mahogany {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn func_cargo2Column {
-                get {
-                    return this.columnfunc_cargo2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2652,7 +2642,7 @@ namespace Mahogany {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public funcionariosRow AddfuncionariosRow(string func_NM, int func_CPF, string func_RG, System.DateTime func_DT_nasc, string func_end, int func_numcasa, string func_fone, string func_email, decimal func_comiss, string func_login, int func_senha, string func_cargo2) {
+            public funcionariosRow AddfuncionariosRow(string func_NM, int func_CPF, string func_RG, System.DateTime func_DT_nasc, string func_end, int func_numcasa, string func_fone, string func_email, decimal func_comiss, string func_login, int func_senha) {
                 funcionariosRow rowfuncionariosRow = ((funcionariosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2666,8 +2656,7 @@ namespace Mahogany {
                         func_email,
                         func_comiss,
                         func_login,
-                        func_senha,
-                        func_cargo2};
+                        func_senha};
                 rowfuncionariosRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowfuncionariosRow);
                 return rowfuncionariosRow;
@@ -2709,7 +2698,6 @@ namespace Mahogany {
                 this.columnfunc_comiss = base.Columns["func_comiss"];
                 this.columnfunc_login = base.Columns["func_login"];
                 this.columnfunc_senha = base.Columns["func_senha"];
-                this.columnfunc_cargo2 = base.Columns["func_cargo2"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2739,8 +2727,6 @@ namespace Mahogany {
                 base.Columns.Add(this.columnfunc_login);
                 this.columnfunc_senha = new global::System.Data.DataColumn("func_senha", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnfunc_senha);
-                this.columnfunc_cargo2 = new global::System.Data.DataColumn("func_cargo2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfunc_cargo2);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnfunc_CD}, true));
                 this.columnfunc_CD.AutoIncrement = true;
@@ -2766,8 +2752,6 @@ namespace Mahogany {
                 this.columnfunc_login.AllowDBNull = false;
                 this.columnfunc_login.MaxLength = 30;
                 this.columnfunc_senha.AllowDBNull = false;
-                this.columnfunc_cargo2.AllowDBNull = false;
-                this.columnfunc_cargo2.MaxLength = 30;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4569,17 +4553,6 @@ namespace Mahogany {
                 }
                 set {
                     this[this.tablefuncionarios.func_senhaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string func_cargo2 {
-                get {
-                    return ((string)(this[this.tablefuncionarios.func_cargo2Column]));
-                }
-                set {
-                    this[this.tablefuncionarios.func_cargo2Column] = value;
                 }
             }
             
@@ -7679,11 +7652,10 @@ SELECT forn_CD, forn_Rsocial, forn_CNPJ, forn_Ins_est, forn_end, forn_fone, forn
             tableMapping.ColumnMappings.Add("func_comiss", "func_comiss");
             tableMapping.ColumnMappings.Add("func_login", "func_login");
             tableMapping.ColumnMappings.Add("func_senha", "func_senha");
-            tableMapping.ColumnMappings.Add("func_cargo2", "func_cargo2");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [madera].[funcionarios] WHERE (([func_CD] = @Original_func_CD) AND ([func_NM] = @Original_func_NM) AND ([func_CPF] = @Original_func_CPF) AND ([func_RG] = @Original_func_RG) AND ([func_DT_nasc] = @Original_func_DT_nasc) AND ([func_end] = @Original_func_end) AND ([func_numcasa] = @Original_func_numcasa) AND ([func_fone] = @Original_func_fone) AND ([func_email] = @Original_func_email) AND ([func_comiss] = @Original_func_comiss) AND ([func_login] = @Original_func_login) AND ([func_senha] = @Original_func_senha) AND ([func_cargo2] = @Original_func_cargo2))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [madera].[funcionarios] WHERE (([func_CD] = @Original_func_CD) AND ([func_NM] = @Original_func_NM) AND ([func_CPF] = @Original_func_CPF) AND ([func_RG] = @Original_func_RG) AND ([func_DT_nasc] = @Original_func_DT_nasc) AND ([func_end] = @Original_func_end) AND ([func_numcasa] = @Original_func_numcasa) AND ([func_fone] = @Original_func_fone) AND ([func_email] = @Original_func_email) AND ([func_comiss] = @Original_func_comiss) AND ([func_login] = @Original_func_login) AND ([func_senha] = @Original_func_senha))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_func_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_CD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_func_NM", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_NM", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -7697,7 +7669,6 @@ SELECT forn_CD, forn_Rsocial, forn_CNPJ, forn_Ins_est, forn_end, forn_fone, forn
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_func_comiss", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_comiss", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_func_login", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_login", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_func_senha", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_senha", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_func_cargo2", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_cargo2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [madera].[funcionarios] ([func_NM], [func_CPF], [func_RG], [func_DT_nasc], [func_end], [func_numcasa], [func_fone], [func_email], [func_comiss], [func_login], [func_senha], [func_cargo2]) VALUES (@func_NM, @func_CPF, @func_RG, @func_DT_nasc, @func_end, @func_numcasa, @func_fone, @func_email, @func_comiss, @func_login, @func_senha, @func_cargo2);
@@ -7717,8 +7688,8 @@ SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@func_cargo2", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_cargo2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [madera].[funcionarios] SET [func_NM] = @func_NM, [func_CPF] = @func_CPF, [func_RG] = @func_RG, [func_DT_nasc] = @func_DT_nasc, [func_end] = @func_end, [func_numcasa] = @func_numcasa, [func_fone] = @func_fone, [func_email] = @func_email, [func_comiss] = @func_comiss, [func_login] = @func_login, [func_senha] = @func_senha, [func_cargo2] = @func_cargo2 WHERE (([func_CD] = @Original_func_CD) AND ([func_NM] = @Original_func_NM) AND ([func_CPF] = @Original_func_CPF) AND ([func_RG] = @Original_func_RG) AND ([func_DT_nasc] = @Original_func_DT_nasc) AND ([func_end] = @Original_func_end) AND ([func_numcasa] = @Original_func_numcasa) AND ([func_fone] = @Original_func_fone) AND ([func_email] = @Original_func_email) AND ([func_comiss] = @Original_func_comiss) AND ([func_login] = @Original_func_login) AND ([func_senha] = @Original_func_senha) AND ([func_cargo2] = @Original_func_cargo2));
-SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa, func_fone, func_email, func_comiss, func_login, func_senha, func_cargo2 FROM madera.funcionarios WHERE (func_CD = @func_CD)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [madera].[funcionarios] SET [func_NM] = @func_NM, [func_CPF] = @func_CPF, [func_RG] = @func_RG, [func_DT_nasc] = @func_DT_nasc, [func_end] = @func_end, [func_numcasa] = @func_numcasa, [func_fone] = @func_fone, [func_email] = @func_email, [func_comiss] = @func_comiss, [func_login] = @func_login, [func_senha] = @func_senha WHERE (([func_CD] = @Original_func_CD) AND ([func_NM] = @Original_func_NM) AND ([func_CPF] = @Original_func_CPF) AND ([func_RG] = @Original_func_RG) AND ([func_DT_nasc] = @Original_func_DT_nasc) AND ([func_end] = @Original_func_end) AND ([func_numcasa] = @Original_func_numcasa) AND ([func_fone] = @Original_func_fone) AND ([func_email] = @Original_func_email) AND ([func_comiss] = @Original_func_comiss) AND ([func_login] = @Original_func_login) AND ([func_senha] = @Original_func_senha));
+SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa, func_fone, func_email, func_comiss, func_login, func_senha FROM madera.funcionarios WHERE (func_CD = @func_CD)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@func_NM", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_NM", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@func_CPF", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_CPF", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -7731,7 +7702,6 @@ SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@func_comiss", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_comiss", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@func_login", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_login", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@func_senha", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_senha", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@func_cargo2", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_cargo2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_func_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_CD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_func_NM", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_NM", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_func_CPF", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_CPF", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -7744,7 +7714,6 @@ SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_func_comiss", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_comiss", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_func_login", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_login", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_func_senha", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_senha", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_func_cargo2", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_cargo2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@func_CD", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "func_CD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -7762,8 +7731,8 @@ SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa," +
-                " func_fone, func_email, func_comiss, func_login, func_senha, func_cargo2 FROM ma" +
-                "dera.funcionarios";
+                " func_fone, func_email, func_comiss, func_login, func_senha FROM madera.funciona" +
+                "rios";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7824,7 +7793,7 @@ SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_func_CD, string Original_func_NM, int Original_func_CPF, string Original_func_RG, System.DateTime Original_func_DT_nasc, string Original_func_end, int Original_func_numcasa, string Original_func_fone, string Original_func_email, decimal Original_func_comiss, string Original_func_login, int Original_func_senha, string Original_func_cargo2) {
+        public virtual int Delete(int Original_func_CD, string Original_func_NM, int Original_func_CPF, string Original_func_RG, System.DateTime Original_func_DT_nasc, string Original_func_end, int Original_func_numcasa, string Original_func_fone, string Original_func_email, decimal Original_func_comiss, string Original_func_login, int Original_func_senha) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_func_CD));
             if ((Original_func_NM == null)) {
                 throw new global::System.ArgumentNullException("Original_func_NM");
@@ -7867,12 +7836,6 @@ SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa
                 this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_func_login));
             }
             this.Adapter.DeleteCommand.Parameters[11].Value = ((int)(Original_func_senha));
-            if ((Original_func_cargo2 == null)) {
-                throw new global::System.ArgumentNullException("Original_func_cargo2");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_func_cargo2));
-            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7973,7 +7936,6 @@ SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa
                     decimal func_comiss, 
                     string func_login, 
                     int func_senha, 
-                    string func_cargo2, 
                     int Original_func_CD, 
                     string Original_func_NM, 
                     int Original_func_CPF, 
@@ -7986,7 +7948,6 @@ SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa
                     decimal Original_func_comiss, 
                     string Original_func_login, 
                     int Original_func_senha, 
-                    string Original_func_cargo2, 
                     int func_CD) {
             if ((func_NM == null)) {
                 throw new global::System.ArgumentNullException("func_NM");
@@ -8029,61 +7990,49 @@ SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa
                 this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(func_login));
             }
             this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(func_senha));
-            if ((func_cargo2 == null)) {
-                throw new global::System.ArgumentNullException("func_cargo2");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(func_cargo2));
-            }
-            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_func_CD));
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_func_CD));
             if ((Original_func_NM == null)) {
                 throw new global::System.ArgumentNullException("Original_func_NM");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_func_NM));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_func_NM));
             }
-            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_func_CPF));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_func_CPF));
             if ((Original_func_RG == null)) {
                 throw new global::System.ArgumentNullException("Original_func_RG");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_func_RG));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_func_RG));
             }
-            this.Adapter.UpdateCommand.Parameters[16].Value = ((System.DateTime)(Original_func_DT_nasc));
+            this.Adapter.UpdateCommand.Parameters[15].Value = ((System.DateTime)(Original_func_DT_nasc));
             if ((Original_func_end == null)) {
                 throw new global::System.ArgumentNullException("Original_func_end");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_func_end));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_func_end));
             }
-            this.Adapter.UpdateCommand.Parameters[18].Value = ((int)(Original_func_numcasa));
+            this.Adapter.UpdateCommand.Parameters[17].Value = ((int)(Original_func_numcasa));
             if ((Original_func_fone == null)) {
                 throw new global::System.ArgumentNullException("Original_func_fone");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_func_fone));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_func_fone));
             }
             if ((Original_func_email == null)) {
                 throw new global::System.ArgumentNullException("Original_func_email");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(Original_func_email));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_func_email));
             }
-            this.Adapter.UpdateCommand.Parameters[21].Value = ((decimal)(Original_func_comiss));
+            this.Adapter.UpdateCommand.Parameters[20].Value = ((decimal)(Original_func_comiss));
             if ((Original_func_login == null)) {
                 throw new global::System.ArgumentNullException("Original_func_login");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_func_login));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_func_login));
             }
-            this.Adapter.UpdateCommand.Parameters[23].Value = ((int)(Original_func_senha));
-            if ((Original_func_cargo2 == null)) {
-                throw new global::System.ArgumentNullException("Original_func_cargo2");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_func_cargo2));
-            }
-            this.Adapter.UpdateCommand.Parameters[25].Value = ((int)(func_CD));
+            this.Adapter.UpdateCommand.Parameters[22].Value = ((int)(Original_func_senha));
+            this.Adapter.UpdateCommand.Parameters[23].Value = ((int)(func_CD));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -8116,7 +8065,6 @@ SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa
                     decimal func_comiss, 
                     string func_login, 
                     int func_senha, 
-                    string func_cargo2, 
                     int Original_func_CD, 
                     string Original_func_NM, 
                     int Original_func_CPF, 
@@ -8128,9 +8076,8 @@ SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa
                     string Original_func_email, 
                     decimal Original_func_comiss, 
                     string Original_func_login, 
-                    int Original_func_senha, 
-                    string Original_func_cargo2) {
-            return this.Update(func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa, func_fone, func_email, func_comiss, func_login, func_senha, func_cargo2, Original_func_CD, Original_func_NM, Original_func_CPF, Original_func_RG, Original_func_DT_nasc, Original_func_end, Original_func_numcasa, Original_func_fone, Original_func_email, Original_func_comiss, Original_func_login, Original_func_senha, Original_func_cargo2, Original_func_CD);
+                    int Original_func_senha) {
+            return this.Update(func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa, func_fone, func_email, func_comiss, func_login, func_senha, Original_func_CD, Original_func_NM, Original_func_CPF, Original_func_RG, Original_func_DT_nasc, Original_func_end, Original_func_numcasa, Original_func_fone, Original_func_email, Original_func_comiss, Original_func_login, Original_func_senha, Original_func_CD);
         }
     }
     
