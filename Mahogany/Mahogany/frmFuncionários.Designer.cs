@@ -43,13 +43,11 @@
             this.funccomissDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.funcloginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.funcsenhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.funccargo2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.funcionariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mahoganyDataSet = new Mahogany.mahoganyDataSet();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.funcionariosTableAdapter = new Mahogany.mahoganyDataSetTableAdapters.funcionariosTableAdapter();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -58,6 +56,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.funcionariosTableAdapter = new Mahogany.mahoganyDataSetTableAdapters.funcionariosTableAdapter();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.funcionariosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).BeginInit();
@@ -83,8 +83,7 @@
             this.funcemailDataGridViewTextBoxColumn,
             this.funccomissDataGridViewTextBoxColumn,
             this.funcloginDataGridViewTextBoxColumn,
-            this.funcsenhaDataGridViewTextBoxColumn,
-            this.funccargo2DataGridViewTextBoxColumn});
+            this.funcsenhaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.funcionariosBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(19, 19);
             this.dataGridView1.Name = "dataGridView1";
@@ -95,81 +94,75 @@
             // funcCDDataGridViewTextBoxColumn
             // 
             this.funcCDDataGridViewTextBoxColumn.DataPropertyName = "func_CD";
-            this.funcCDDataGridViewTextBoxColumn.HeaderText = "Código";
+            this.funcCDDataGridViewTextBoxColumn.HeaderText = "func_CD";
             this.funcCDDataGridViewTextBoxColumn.Name = "funcCDDataGridViewTextBoxColumn";
             this.funcCDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // funcNMDataGridViewTextBoxColumn
             // 
             this.funcNMDataGridViewTextBoxColumn.DataPropertyName = "func_NM";
-            this.funcNMDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.funcNMDataGridViewTextBoxColumn.HeaderText = "func_NM";
             this.funcNMDataGridViewTextBoxColumn.Name = "funcNMDataGridViewTextBoxColumn";
             // 
             // funcCPFDataGridViewTextBoxColumn
             // 
             this.funcCPFDataGridViewTextBoxColumn.DataPropertyName = "func_CPF";
-            this.funcCPFDataGridViewTextBoxColumn.HeaderText = "CPF";
+            this.funcCPFDataGridViewTextBoxColumn.HeaderText = "func_CPF";
             this.funcCPFDataGridViewTextBoxColumn.Name = "funcCPFDataGridViewTextBoxColumn";
             // 
             // funcRGDataGridViewTextBoxColumn
             // 
             this.funcRGDataGridViewTextBoxColumn.DataPropertyName = "func_RG";
-            this.funcRGDataGridViewTextBoxColumn.HeaderText = "RG";
+            this.funcRGDataGridViewTextBoxColumn.HeaderText = "func_RG";
             this.funcRGDataGridViewTextBoxColumn.Name = "funcRGDataGridViewTextBoxColumn";
             // 
             // funcDTnascDataGridViewTextBoxColumn
             // 
             this.funcDTnascDataGridViewTextBoxColumn.DataPropertyName = "func_DT_nasc";
-            this.funcDTnascDataGridViewTextBoxColumn.HeaderText = "Data de Nascimento";
+            this.funcDTnascDataGridViewTextBoxColumn.HeaderText = "func_DT_nasc";
             this.funcDTnascDataGridViewTextBoxColumn.Name = "funcDTnascDataGridViewTextBoxColumn";
             // 
             // funcendDataGridViewTextBoxColumn
             // 
             this.funcendDataGridViewTextBoxColumn.DataPropertyName = "func_end";
-            this.funcendDataGridViewTextBoxColumn.HeaderText = "Endereço";
+            this.funcendDataGridViewTextBoxColumn.HeaderText = "func_end";
             this.funcendDataGridViewTextBoxColumn.Name = "funcendDataGridViewTextBoxColumn";
             // 
             // funcnumcasaDataGridViewTextBoxColumn
             // 
             this.funcnumcasaDataGridViewTextBoxColumn.DataPropertyName = "func_numcasa";
-            this.funcnumcasaDataGridViewTextBoxColumn.HeaderText = "Número da Casa";
+            this.funcnumcasaDataGridViewTextBoxColumn.HeaderText = "func_numcasa";
             this.funcnumcasaDataGridViewTextBoxColumn.Name = "funcnumcasaDataGridViewTextBoxColumn";
             // 
             // funcfoneDataGridViewTextBoxColumn
             // 
             this.funcfoneDataGridViewTextBoxColumn.DataPropertyName = "func_fone";
-            this.funcfoneDataGridViewTextBoxColumn.HeaderText = "Telefone";
+            this.funcfoneDataGridViewTextBoxColumn.HeaderText = "func_fone";
             this.funcfoneDataGridViewTextBoxColumn.Name = "funcfoneDataGridViewTextBoxColumn";
             // 
             // funcemailDataGridViewTextBoxColumn
             // 
             this.funcemailDataGridViewTextBoxColumn.DataPropertyName = "func_email";
-            this.funcemailDataGridViewTextBoxColumn.HeaderText = "E-mail";
+            this.funcemailDataGridViewTextBoxColumn.HeaderText = "func_email";
             this.funcemailDataGridViewTextBoxColumn.Name = "funcemailDataGridViewTextBoxColumn";
             // 
             // funccomissDataGridViewTextBoxColumn
             // 
             this.funccomissDataGridViewTextBoxColumn.DataPropertyName = "func_comiss";
-            this.funccomissDataGridViewTextBoxColumn.HeaderText = "Comissão";
+            this.funccomissDataGridViewTextBoxColumn.HeaderText = "func_comiss";
             this.funccomissDataGridViewTextBoxColumn.Name = "funccomissDataGridViewTextBoxColumn";
             // 
             // funcloginDataGridViewTextBoxColumn
             // 
             this.funcloginDataGridViewTextBoxColumn.DataPropertyName = "func_login";
-            this.funcloginDataGridViewTextBoxColumn.HeaderText = "Login";
+            this.funcloginDataGridViewTextBoxColumn.HeaderText = "func_login";
             this.funcloginDataGridViewTextBoxColumn.Name = "funcloginDataGridViewTextBoxColumn";
             // 
             // funcsenhaDataGridViewTextBoxColumn
             // 
             this.funcsenhaDataGridViewTextBoxColumn.DataPropertyName = "func_senha";
-            this.funcsenhaDataGridViewTextBoxColumn.HeaderText = "Senhas";
+            this.funcsenhaDataGridViewTextBoxColumn.HeaderText = "func_senha";
             this.funcsenhaDataGridViewTextBoxColumn.Name = "funcsenhaDataGridViewTextBoxColumn";
-            // 
-            // funccargo2DataGridViewTextBoxColumn
-            // 
-            this.funccargo2DataGridViewTextBoxColumn.DataPropertyName = "func_cargo2";
-            this.funccargo2DataGridViewTextBoxColumn.HeaderText = "Cargo";
-            this.funccargo2DataGridViewTextBoxColumn.Name = "funccargo2DataGridViewTextBoxColumn";
             // 
             // funcionariosBindingSource
             // 
@@ -200,7 +193,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(132, 129);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(748, 20);
+            this.textBox1.Size = new System.Drawing.Size(712, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -214,10 +207,6 @@
             this.label14.TabIndex = 32;
             this.label14.Text = "_________________________________________________________________________________" +
     "___________";
-            // 
-            // funcionariosTableAdapter
-            // 
-            this.funcionariosTableAdapter.ClearBeforeFill = true;
             // 
             // groupBox1
             // 
@@ -318,6 +307,23 @@
             this.label6.Text = "_________________________________________________________________________________" +
     "____________________________________________________________________";
             // 
+            // funcionariosTableAdapter
+            // 
+            this.funcionariosTableAdapter.ClearBeforeFill = true;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(850, 123);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(30, 30);
+            this.button3.TabIndex = 54;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_3);
+            // 
             // frmFuncionários
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -327,6 +333,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(951, 700);
             this.ControlBox = false;
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -361,14 +368,15 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label14;
-        private mahoganyDataSet mahoganyDataSet;
-        private System.Windows.Forms.BindingSource funcionariosBindingSource;
-        private mahoganyDataSetTableAdapters.funcionariosTableAdapter funcionariosTableAdapter;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private mahoganyDataSet mahoganyDataSet;
+        private System.Windows.Forms.BindingSource funcionariosBindingSource;
+        private mahoganyDataSetTableAdapters.funcionariosTableAdapter funcionariosTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn funcCDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn funcNMDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn funcCPFDataGridViewTextBoxColumn;
@@ -381,7 +389,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn funccomissDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn funcloginDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn funcsenhaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn funccargo2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button3;
     }
 }

@@ -68,7 +68,7 @@
             this.textBox8.Location = new System.Drawing.Point(357, 219);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(183, 20);
-            this.textBox8.TabIndex = 15;
+            this.textBox8.TabIndex = 7;
             // 
             // produtosBindingSource
             // 
@@ -100,7 +100,7 @@
             this.button3.Location = new System.Drawing.Point(496, 509);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(76, 33);
-            this.button3.TabIndex = 46;
+            this.button3.TabIndex = 1;
             this.button3.Text = "Voltar";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -111,7 +111,7 @@
             this.textBox7.Location = new System.Drawing.Point(357, 160);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(183, 20);
-            this.textBox7.TabIndex = 14;
+            this.textBox7.TabIndex = 6;
             // 
             // textBox6
             // 
@@ -119,7 +119,7 @@
             this.textBox6.Location = new System.Drawing.Point(357, 98);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(183, 20);
-            this.textBox6.TabIndex = 13;
+            this.textBox6.TabIndex = 5;
             // 
             // textBox5
             // 
@@ -127,7 +127,7 @@
             this.textBox5.Location = new System.Drawing.Point(357, 44);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(183, 20);
-            this.textBox5.TabIndex = 12;
+            this.textBox5.TabIndex = 4;
             // 
             // textBox4
             // 
@@ -135,7 +135,7 @@
             this.textBox4.Location = new System.Drawing.Point(31, 219);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(183, 20);
-            this.textBox4.TabIndex = 11;
+            this.textBox4.TabIndex = 3;
             // 
             // textBox3
             // 
@@ -143,7 +143,7 @@
             this.textBox3.Location = new System.Drawing.Point(31, 160);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(183, 20);
-            this.textBox3.TabIndex = 10;
+            this.textBox3.TabIndex = 2;
             // 
             // textBox2
             // 
@@ -151,7 +151,7 @@
             this.textBox2.Location = new System.Drawing.Point(31, 98);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(183, 20);
-            this.textBox2.TabIndex = 9;
+            this.textBox2.TabIndex = 1;
             // 
             // textBox1
             // 
@@ -159,7 +159,7 @@
             this.textBox1.Location = new System.Drawing.Point(31, 44);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(183, 20);
-            this.textBox1.TabIndex = 8;
+            this.textBox1.TabIndex = 0;
             // 
             // label8
             // 
@@ -179,7 +179,7 @@
             this.button1.Location = new System.Drawing.Point(331, 509);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(76, 33);
-            this.button1.TabIndex = 44;
+            this.button1.TabIndex = 0;
             this.button1.Text = "Alterar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);

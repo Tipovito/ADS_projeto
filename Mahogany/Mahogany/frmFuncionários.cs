@@ -20,7 +20,7 @@ namespace Mahogany
         private void button1_Click(object sender, EventArgs e)
         {
             Class1.altera = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            this.Visible = false;
+            //this.Visible = false;
             frmAlteraFuncionario frmPesquisaFuncionario = new frmAlteraFuncionario();
             frmPesquisaFuncionario.ShowDialog();
 
@@ -35,6 +35,8 @@ namespace Mahogany
 
         private void frmPesquisaFuncionarios_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'mahoganyDataSet.funcionarios'. Você pode movê-la ou removê-la conforme necessário.
+            this.funcionariosTableAdapter.Fill(this.mahoganyDataSet.funcionarios);
             // TODO: esta linha de código carrega dados na tabela 'mahoganyDataSet.funcionarios'. Você pode movê-la ou removê-la conforme necessário.
             this.funcionariosTableAdapter.Fill(this.mahoganyDataSet.funcionarios);
 
@@ -67,7 +69,7 @@ namespace Mahogany
         private void button5_Click(object sender, EventArgs e)
         {
             frmCadFuncionarios frmPesquisaFuncionarios = new frmCadFuncionarios();
-            this.Hide();
+            //this.Hide();
             frmPesquisaFuncionarios.ShowDialog();
         }
 
@@ -82,6 +84,22 @@ namespace Mahogany
                 funcionariosBindingSource.Filter = "";
 
             }
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            
+            // TODO: esta linha de código carrega dados na tabela 'mahoganyDataSet.funcionarios'. Você pode movê-la ou removê-la conforme necessário.
+        }
+
+        private void button3_Click_2(object sender, EventArgs e)
+        {
+            this.funcionariosTableAdapter.Fill(this.mahoganyDataSet.funcionarios);
+        }
+
+        private void button3_Click_3(object sender, EventArgs e)
+        {
+            this.funcionariosTableAdapter.Fill(this.mahoganyDataSet.funcionarios);
         }
     }
 }

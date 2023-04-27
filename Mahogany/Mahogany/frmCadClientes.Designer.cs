@@ -35,9 +35,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mahoganyDataSet = new Mahogany.mahoganyDataSet();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -51,9 +54,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.clientesTableAdapter = new Mahogany.mahoganyDataSetTableAdapters.clientesTableAdapter();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).BeginInit();
@@ -147,13 +147,13 @@
             this.groupBox2.TabIndex = 43;
             this.groupBox2.TabStop = false;
             // 
-            // textBox9
+            // maskedTextBox3
             // 
-            this.textBox9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "clie_fone_ref", true));
-            this.textBox9.Location = new System.Drawing.Point(372, 219);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(183, 20);
-            this.textBox9.TabIndex = 8;
+            this.maskedTextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "clie_fone", true));
+            this.maskedTextBox3.Location = new System.Drawing.Point(373, 44);
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(182, 20);
+            this.maskedTextBox3.TabIndex = 4;
             // 
             // clientesBindingSource
             // 
@@ -164,6 +164,31 @@
             // 
             this.mahoganyDataSet.DataSetName = "mahoganyDataSet";
             this.mahoganyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "clie_RG", true));
+            this.maskedTextBox2.Location = new System.Drawing.Point(30, 160);
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(183, 20);
+            this.maskedTextBox2.TabIndex = 2;
+            this.maskedTextBox2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "clie_DT_nasc", true));
+            this.maskedTextBox1.Location = new System.Drawing.Point(30, 219);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(181, 20);
+            this.maskedTextBox1.TabIndex = 3;
+            // 
+            // textBox9
+            // 
+            this.textBox9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "clie_fone_ref", true));
+            this.textBox9.Location = new System.Drawing.Point(372, 219);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(183, 20);
+            this.textBox9.TabIndex = 7;
             // 
             // label9
             // 
@@ -180,7 +205,7 @@
             this.textBox8.Location = new System.Drawing.Point(372, 160);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(183, 20);
-            this.textBox8.TabIndex = 7;
+            this.textBox8.TabIndex = 6;
             // 
             // textBox7
             // 
@@ -188,7 +213,7 @@
             this.textBox7.Location = new System.Drawing.Point(372, 98);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(183, 20);
-            this.textBox7.TabIndex = 6;
+            this.textBox7.TabIndex = 5;
             // 
             // textBox3
             // 
@@ -196,7 +221,7 @@
             this.textBox3.Location = new System.Drawing.Point(30, 98);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(183, 20);
-            this.textBox3.TabIndex = 2;
+            this.textBox3.TabIndex = 1;
             // 
             // textBox2
             // 
@@ -204,7 +229,7 @@
             this.textBox2.Location = new System.Drawing.Point(30, 44);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(183, 20);
-            this.textBox2.TabIndex = 1;
+            this.textBox2.TabIndex = 0;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label8
@@ -273,31 +298,6 @@
             // clientesTableAdapter
             // 
             this.clientesTableAdapter.ClearBeforeFill = true;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "clie_DT_nasc", true));
-            this.maskedTextBox1.Location = new System.Drawing.Point(30, 219);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(181, 20);
-            this.maskedTextBox1.TabIndex = 17;
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "clie_RG", true));
-            this.maskedTextBox2.Location = new System.Drawing.Point(30, 160);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(183, 20);
-            this.maskedTextBox2.TabIndex = 18;
-            this.maskedTextBox2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
-            // 
-            // maskedTextBox3
-            // 
-            this.maskedTextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "clie_fone", true));
-            this.maskedTextBox3.Location = new System.Drawing.Point(373, 44);
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(182, 20);
-            this.maskedTextBox3.TabIndex = 19;
             // 
             // frmCadClientes
             // 

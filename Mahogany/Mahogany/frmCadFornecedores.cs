@@ -58,6 +58,8 @@ namespace Mahogany
             // TODO: esta linha de código carrega dados na tabela 'mahoganyDataSet.fornecedores'. Você pode movê-la ou removê-la conforme necessário.
             this.fornecedoresTableAdapter.Fill(this.mahoganyDataSet.fornecedores);
             fornecedoresBindingSource.AddNew();
+
+            maskedTextBox1.Mask = "00-0000.0000";
         }
     }
 }

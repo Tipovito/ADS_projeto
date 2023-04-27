@@ -32,11 +32,8 @@
             this.funcionariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mahoganyDataSet = new Mahogany.mahoganyDataSet();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -56,12 +53,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.funcionariosTableAdapter = new Mahogany.mahoganyDataSetTableAdapters.funcionariosTableAdapter();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.funcionariosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).BeginInit();
@@ -85,23 +83,7 @@
             this.textBox3.Location = new System.Drawing.Point(278, 87);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(252, 20);
-            this.textBox3.TabIndex = 4;
-            // 
-            // textBox4
-            // 
-            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_RG", true));
-            this.textBox4.Location = new System.Drawing.Point(590, 35);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(183, 20);
-            this.textBox4.TabIndex = 5;
-            // 
-            // textBox5
-            // 
-            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_DT_nasc", true));
-            this.textBox5.Location = new System.Drawing.Point(590, 87);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(183, 20);
-            this.textBox5.TabIndex = 6;
+            this.textBox3.TabIndex = 3;
             // 
             // textBox6
             // 
@@ -118,14 +100,6 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(183, 20);
             this.textBox7.TabIndex = 1;
-            // 
-            // textBox8
-            // 
-            this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_fone", true));
-            this.textBox8.Location = new System.Drawing.Point(47, 147);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(183, 20);
-            this.textBox8.TabIndex = 2;
             // 
             // textBox9
             // 
@@ -149,7 +123,7 @@
             this.textBox11.Location = new System.Drawing.Point(30, 37);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(183, 20);
-            this.textBox11.TabIndex = 1;
+            this.textBox11.TabIndex = 0;
             // 
             // textBox12
             // 
@@ -157,7 +131,7 @@
             this.textBox12.Location = new System.Drawing.Point(32, 87);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(183, 20);
-            this.textBox12.TabIndex = 2;
+            this.textBox12.TabIndex = 1;
             // 
             // label2
             // 
@@ -303,6 +277,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(226)))), ((int)(((byte)(211)))));
+            this.groupBox1.Controls.Add(this.maskedTextBox2);
+            this.groupBox1.Controls.Add(this.maskedTextBox1);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label4);
@@ -312,14 +288,28 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.textBox11);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.textBox12);
-            this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Location = new System.Drawing.Point(51, 66);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(806, 178);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_DT_nasc", true));
+            this.maskedTextBox2.Location = new System.Drawing.Point(591, 87);
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(182, 20);
+            this.maskedTextBox2.TabIndex = 5;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_RG", true));
+            this.maskedTextBox1.Location = new System.Drawing.Point(590, 35);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(183, 20);
+            this.maskedTextBox1.TabIndex = 4;
             // 
             // textBox2
             // 
@@ -327,26 +317,7 @@
             this.textBox2.Location = new System.Drawing.Point(278, 35);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(252, 20);
-            this.textBox2.TabIndex = 3;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_cargo2", true));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(327, 147);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(252, 21);
-            this.comboBox1.TabIndex = 5;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(324, 131);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(35, 13);
-            this.label15.TabIndex = 32;
-            this.label15.Text = "Cargo";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
+            this.textBox2.TabIndex = 2;
             // 
             // label14
             // 
@@ -365,12 +336,10 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(226)))), ((int)(((byte)(211)))));
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.maskedTextBox3);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBox8);
             this.groupBox2.Controls.Add(this.textBox6);
             this.groupBox2.Controls.Add(this.textBox9);
             this.groupBox2.Controls.Add(this.label8);
@@ -382,6 +351,14 @@
             this.groupBox2.Size = new System.Drawing.Size(622, 193);
             this.groupBox2.TabIndex = 32;
             this.groupBox2.TabStop = false;
+            // 
+            // maskedTextBox3
+            // 
+            this.maskedTextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_fone", true));
+            this.maskedTextBox3.Location = new System.Drawing.Point(47, 148);
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(183, 20);
+            this.maskedTextBox3.TabIndex = 2;
             // 
             // label13
             // 
@@ -427,11 +404,8 @@
 
         #endregion
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
@@ -453,12 +427,13 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox1;
         private mahoganyDataSet mahoganyDataSet;
         private System.Windows.Forms.BindingSource funcionariosBindingSource;
         private mahoganyDataSetTableAdapters.funcionariosTableAdapter funcionariosTableAdapter;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
     }
 }

@@ -53,6 +53,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fornecedoresBindingSource)).BeginInit();
@@ -75,7 +76,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.label3.Location = new System.Drawing.Point(553, 656);
+            this.label3.Location = new System.Drawing.Point(553, 650);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 16);
             this.label3.TabIndex = 60;
@@ -86,7 +87,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.label1.Location = new System.Drawing.Point(351, 656);
+            this.label1.Location = new System.Drawing.Point(351, 650);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 16);
             this.label1.TabIndex = 59;
@@ -107,7 +108,7 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(226)))), ((int)(((byte)(211)))));
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(71, 184);
+            this.groupBox1.Location = new System.Drawing.Point(71, 170);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(809, 401);
             this.groupBox1.TabIndex = 56;
@@ -197,9 +198,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 154);
+            this.textBox1.Location = new System.Drawing.Point(132, 140);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(748, 20);
+            this.textBox1.Size = new System.Drawing.Size(712, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -207,7 +208,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.label14.Location = new System.Drawing.Point(197, 671);
+            this.label14.Location = new System.Drawing.Point(197, 665);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(559, 13);
             this.label14.TabIndex = 55;
@@ -256,7 +257,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.button2.Location = new System.Drawing.Point(553, 606);
+            this.button2.Location = new System.Drawing.Point(553, 600);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(47, 47);
             this.button2.TabIndex = 3;
@@ -271,12 +272,25 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(94)))), ((int)(((byte)(66)))));
-            this.button1.Location = new System.Drawing.Point(353, 606);
+            this.button1.Location = new System.Drawing.Point(353, 600);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(47, 47);
             this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(850, 148);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(30, 30);
+            this.button3.TabIndex = 66;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // frmFornecedores
             // 
@@ -286,6 +300,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(951, 700);
             this.ControlBox = false;
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -335,5 +350,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn fornfoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fornemailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fornrpstntDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button3;
     }
 }

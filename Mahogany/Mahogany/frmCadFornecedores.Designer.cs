@@ -33,7 +33,6 @@
             this.fornecedoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mahoganyDataSet = new Mahogany.mahoganyDataSet();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -52,6 +51,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.fornecedoresTableAdapter = new Mahogany.mahoganyDataSetTableAdapters.fornecedoresTableAdapter();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.fornecedoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -63,7 +63,7 @@
             this.textBox8.Location = new System.Drawing.Point(374, 160);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(183, 20);
-            this.textBox8.TabIndex = 7;
+            this.textBox8.TabIndex = 6;
             // 
             // fornecedoresBindingSource
             // 
@@ -81,15 +81,7 @@
             this.textBox7.Location = new System.Drawing.Point(374, 101);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(183, 20);
-            this.textBox7.TabIndex = 6;
-            // 
-            // textBox6
-            // 
-            this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fornecedoresBindingSource, "forn_fone", true));
-            this.textBox6.Location = new System.Drawing.Point(374, 39);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(183, 20);
-            this.textBox6.TabIndex = 5;
+            this.textBox7.TabIndex = 5;
             // 
             // textBox5
             // 
@@ -97,7 +89,7 @@
             this.textBox5.Location = new System.Drawing.Point(37, 219);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(183, 20);
-            this.textBox5.TabIndex = 4;
+            this.textBox5.TabIndex = 3;
             // 
             // label13
             // 
@@ -116,7 +108,7 @@
             this.textBox4.Location = new System.Drawing.Point(37, 160);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(183, 20);
-            this.textBox4.TabIndex = 3;
+            this.textBox4.TabIndex = 2;
             // 
             // textBox3
             // 
@@ -124,7 +116,7 @@
             this.textBox3.Location = new System.Drawing.Point(37, 101);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(183, 20);
-            this.textBox3.TabIndex = 2;
+            this.textBox3.TabIndex = 1;
             // 
             // textBox2
             // 
@@ -132,7 +124,7 @@
             this.textBox2.Location = new System.Drawing.Point(37, 39);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(183, 20);
-            this.textBox2.TabIndex = 1;
+            this.textBox2.TabIndex = 0;
             // 
             // label14
             // 
@@ -252,9 +244,9 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(226)))), ((int)(((byte)(211)))));
+            this.groupBox2.Controls.Add(this.maskedTextBox1);
             this.groupBox2.Controls.Add(this.textBox8);
             this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox6);
             this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Controls.Add(this.textBox3);
@@ -275,6 +267,14 @@
             // fornecedoresTableAdapter
             // 
             this.fornecedoresTableAdapter.ClearBeforeFill = true;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fornecedoresBindingSource, "forn_fone", true));
+            this.maskedTextBox1.Location = new System.Drawing.Point(374, 39);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(183, 20);
+            this.maskedTextBox1.TabIndex = 4;
             // 
             // frmCadFornecedores
             // 
@@ -306,7 +306,6 @@
         #endregion
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox4;
@@ -327,5 +326,6 @@
         private mahoganyDataSet mahoganyDataSet;
         private System.Windows.Forms.BindingSource fornecedoresBindingSource;
         private mahoganyDataSetTableAdapters.fornecedoresTableAdapter fornecedoresTableAdapter;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }

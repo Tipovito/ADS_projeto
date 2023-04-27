@@ -63,7 +63,7 @@ namespace Mahogany
         private void button5_Click(object sender, EventArgs e)
         {
             frmCadFornecedores frmFornecedores = new frmCadFornecedores();
-            this.Hide();
+            //this.Hide();
             frmFornecedores.ShowDialog();
 
         }
@@ -71,9 +71,14 @@ namespace Mahogany
         private void button1_Click(object sender, EventArgs e)
         {
             Class1.altera = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            this.Visible = false;
+            //this.Visible = false;
             frmAlteraFornecedores frmFornecedores = new frmAlteraFornecedores();
             frmFornecedores.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.fornecedoresTableAdapter.Fill(this.mahoganyDataSet.fornecedores);
         }
     }
 }

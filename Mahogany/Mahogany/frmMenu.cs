@@ -133,7 +133,7 @@ namespace Mahogany
         private void button7_Click(object sender, EventArgs e)
         {
             frmBackRestore frmMenu = new frmBackRestore();
-            this.Hide();
+            //this.Hide();
             frmMenu.ShowDialog();
         }
 

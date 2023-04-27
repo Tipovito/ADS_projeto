@@ -36,18 +36,18 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.funcionariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mahoganyDataSet = new Mahogany.mahoganyDataSet();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.funcionariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mahoganyDataSet = new Mahogany.mahoganyDataSet();
             this.funcionariosTableAdapter = new Mahogany.mahoganyDataSetTableAdapters.funcionariosTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.funcionariosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.funcionariosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -112,6 +112,16 @@
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 11;
             // 
+            // funcionariosBindingSource
+            // 
+            this.funcionariosBindingSource.DataMember = "funcionarios";
+            this.funcionariosBindingSource.DataSource = this.mahoganyDataSet;
+            // 
+            // mahoganyDataSet
+            // 
+            this.mahoganyDataSet.DataSetName = "mahoganyDataSet";
+            this.mahoganyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // textBox4
             // 
             this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "func_senha", true));
@@ -158,16 +168,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // funcionariosBindingSource
-            // 
-            this.funcionariosBindingSource.DataMember = "funcionarios";
-            this.funcionariosBindingSource.DataSource = this.mahoganyDataSet;
-            // 
-            // mahoganyDataSet
-            // 
-            this.mahoganyDataSet.DataSetName = "mahoganyDataSet";
-            this.mahoganyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // funcionariosTableAdapter
             // 
             this.funcionariosTableAdapter.ClearBeforeFill = true;
@@ -189,12 +189,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.frmLogin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.funcionariosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.funcionariosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

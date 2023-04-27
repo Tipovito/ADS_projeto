@@ -58,7 +58,7 @@ namespace Mahogany
         private void button1_Click(object sender, EventArgs e)
         {
             Class1.altera = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            this.Visible = false;
+            //this.Visible = false;
             frmAlteraCliente pesq = new frmAlteraCliente();
             pesq.ShowDialog();
         }
@@ -66,7 +66,7 @@ namespace Mahogany
         private void button5_Click(object sender, EventArgs e)
         {
             frmCadClientes frmClientes = new frmCadClientes();
-            this.Hide();
+            //this.Hide();
             frmClientes.ShowDialog();
         }
 
@@ -81,6 +81,11 @@ namespace Mahogany
                 clientesBindingSource.Filter = "";
 
             }
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            this.clientesTableAdapter.Fill(this.mahoganyDataSet.clientes);
         }
     }
 }

@@ -45,7 +45,6 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.fornecedoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mahoganyDataSet = new Mahogany.mahoganyDataSet();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -53,6 +52,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.fornecedoresTableAdapter = new Mahogany.mahoganyDataSetTableAdapters.fornecedoresTableAdapter();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fornecedoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahoganyDataSet)).BeginInit();
@@ -182,8 +182,8 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(226)))), ((int)(((byte)(211)))));
+            this.groupBox2.Controls.Add(this.maskedTextBox1);
             this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.textBox6);
             this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.textBox4);
@@ -221,14 +221,6 @@
             // 
             this.mahoganyDataSet.DataSetName = "mahoganyDataSet";
             this.mahoganyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // textBox7
-            // 
-            this.textBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fornecedoresBindingSource, "forn_email", true));
-            this.textBox7.Location = new System.Drawing.Point(368, 160);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(183, 20);
-            this.textBox7.TabIndex = 14;
             // 
             // textBox6
             // 
@@ -282,6 +274,14 @@
             // 
             this.fornecedoresTableAdapter.ClearBeforeFill = true;
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fornecedoresBindingSource, "forn_email", true));
+            this.maskedTextBox1.Location = new System.Drawing.Point(368, 160);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(183, 20);
+            this.maskedTextBox1.TabIndex = 16;
+            // 
             // frmAlteraFornecedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -322,7 +322,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
@@ -332,5 +331,6 @@
         private mahoganyDataSet mahoganyDataSet;
         private System.Windows.Forms.BindingSource fornecedoresBindingSource;
         private mahoganyDataSetTableAdapters.fornecedoresTableAdapter fornecedoresTableAdapter;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }

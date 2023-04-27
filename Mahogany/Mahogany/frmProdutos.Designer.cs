@@ -53,6 +53,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).BeginInit();
@@ -155,7 +156,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(132, 145);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(748, 20);
+            this.textBox1.Size = new System.Drawing.Size(712, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -278,6 +279,19 @@
             this.label6.Text = "_________________________________________________________________________________" +
     "____________________________________________________________________";
             // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(850, 139);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(30, 30);
+            this.button3.TabIndex = 54;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
             // frmProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -286,6 +300,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(951, 700);
             this.ControlBox = false;
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -336,5 +351,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn prodVLaquisiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn prodVLvendaDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button3;
     }
 }

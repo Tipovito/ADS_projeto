@@ -25,6 +25,10 @@ namespace Mahogany
             // TODO: esta linha de código carrega dados na tabela 'colabDataSet.pessoa'. Você pode movê-la ou removê-la conforme necessário.
             this.funcionariosTableAdapter.Fill(this.mahoganyDataSet.funcionarios);
             funcionariosBindingSource.AddNew();
+
+            maskedTextBox1.Mask = "00.000.000-0";
+            maskedTextBox2.Mask = "00/00/0000";
+            maskedTextBox3.Mask = "00-0000.0000";
         }
 
         private void button1_Click(object sender, EventArgs e)

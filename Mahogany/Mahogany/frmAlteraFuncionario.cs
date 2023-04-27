@@ -15,6 +15,9 @@ namespace Mahogany
         public frmAlteraFuncionario()
         {
             InitializeComponent();
+            maskedTextBox1.Mask = "00.000.000-0";
+            maskedTextBox2.Mask = "00/00/0000";
+            maskedTextBox2.Mask = "00-0000.0000";
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -30,9 +33,7 @@ namespace Mahogany
 
             textBox1.Focus();
 
-            frmFuncionários pesq = new frmFuncionários();
-            this.Hide();
-            pesq.ShowDialog();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -48,6 +49,7 @@ namespace Mahogany
             else
             { funcionariosBindingSource.Filter = string.Format("func_CD={0}", Class1.altera); }
 
+          
         }
     }
 }

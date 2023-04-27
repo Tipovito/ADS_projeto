@@ -179,9 +179,7 @@ namespace Mahogany
 
         private void button8_Click(object sender, EventArgs e)
         {
-            frmMenu frmBackRestore = new frmMenu();
-            this.Hide();
-            frmBackRestore.ShowDialog();
+            this.Close();
         }
     }
 }

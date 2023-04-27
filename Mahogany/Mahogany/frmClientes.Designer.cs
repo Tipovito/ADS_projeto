@@ -54,6 +54,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.clientesTableAdapter = new Mahogany.mahoganyDataSetTableAdapters.clientesTableAdapter();
             this.label6 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
@@ -189,7 +190,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(132, 144);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(748, 20);
+            this.textBox1.Size = new System.Drawing.Size(712, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -286,6 +287,19 @@
             this.label6.Text = "_________________________________________________________________________________" +
     "________________________________________________________________";
             // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(850, 138);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(30, 30);
+            this.button3.TabIndex = 53;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,6 +309,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(951, 700);
             this.ControlBox = false;
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button5);
@@ -347,5 +362,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clieemailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn clierefDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cliefonerefDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button3;
     }
 }

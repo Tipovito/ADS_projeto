@@ -36,27 +36,21 @@ namespace Mahogany {
         
         private funcionariosDataTable tablefuncionarios;
         
-        private pedidosDataTable tablepedidos;
-        
         private produtosDataTable tableprodutos;
         
-        private global::System.Data.DataRelation relationFK__control_c__clie___6383C8BA;
+        private global::System.Data.DataRelation relationFK__control_c__clie___3F466844;
         
-        private global::System.Data.DataRelation relationFK__control_c__func___628FA481;
+        private global::System.Data.DataRelation relationFK__control_c__func___3E52440B;
         
-        private global::System.Data.DataRelation relationFK__control_c__prod___6477ECF3;
+        private global::System.Data.DataRelation relationFK__control_c__prod___403A8C7D;
         
-        private global::System.Data.DataRelation relationFK__control_e__forn___6C190EBB;
+        private global::System.Data.DataRelation relationFK__control_e__forn___47DBAE45;
         
-        private global::System.Data.DataRelation relationFK__control_e__prod___6B24EA82;
+        private global::System.Data.DataRelation relationFK__control_e__prod___46E78A0C;
         
-        private global::System.Data.DataRelation relationFK__control_v__clie___6754599E;
+        private global::System.Data.DataRelation relationFK__control_v__clie___4316F928;
         
-        private global::System.Data.DataRelation relationFK__control_v__func___68487DD7;
-        
-        private global::System.Data.DataRelation relationFK__pedidos__clie_CD__5EBF139D;
-        
-        private global::System.Data.DataRelation relationFK__pedidos__prod_CD__5FB337D6;
+        private global::System.Data.DataRelation relationFK__control_v__func___440B1D61;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -103,9 +97,6 @@ namespace Mahogany {
                 }
                 if ((ds.Tables["funcionarios"] != null)) {
                     base.Tables.Add(new funcionariosDataTable(ds.Tables["funcionarios"]));
-                }
-                if ((ds.Tables["pedidos"] != null)) {
-                    base.Tables.Add(new pedidosDataTable(ds.Tables["pedidos"]));
                 }
                 if ((ds.Tables["produtos"] != null)) {
                     base.Tables.Add(new produtosDataTable(ds.Tables["produtos"]));
@@ -185,16 +176,6 @@ namespace Mahogany {
         public funcionariosDataTable funcionarios {
             get {
                 return this.tablefuncionarios;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public pedidosDataTable pedidos {
-            get {
-                return this.tablepedidos;
             }
         }
         
@@ -293,9 +274,6 @@ namespace Mahogany {
                 if ((ds.Tables["funcionarios"] != null)) {
                     base.Tables.Add(new funcionariosDataTable(ds.Tables["funcionarios"]));
                 }
-                if ((ds.Tables["pedidos"] != null)) {
-                    base.Tables.Add(new pedidosDataTable(ds.Tables["pedidos"]));
-                }
                 if ((ds.Tables["produtos"] != null)) {
                     base.Tables.Add(new produtosDataTable(ds.Tables["produtos"]));
                 }
@@ -368,27 +346,19 @@ namespace Mahogany {
                     this.tablefuncionarios.InitVars();
                 }
             }
-            this.tablepedidos = ((pedidosDataTable)(base.Tables["pedidos"]));
-            if ((initTable == true)) {
-                if ((this.tablepedidos != null)) {
-                    this.tablepedidos.InitVars();
-                }
-            }
             this.tableprodutos = ((produtosDataTable)(base.Tables["produtos"]));
             if ((initTable == true)) {
                 if ((this.tableprodutos != null)) {
                     this.tableprodutos.InitVars();
                 }
             }
-            this.relationFK__control_c__clie___6383C8BA = this.Relations["FK__control_c__clie___6383C8BA"];
-            this.relationFK__control_c__func___628FA481 = this.Relations["FK__control_c__func___628FA481"];
-            this.relationFK__control_c__prod___6477ECF3 = this.Relations["FK__control_c__prod___6477ECF3"];
-            this.relationFK__control_e__forn___6C190EBB = this.Relations["FK__control_e__forn___6C190EBB"];
-            this.relationFK__control_e__prod___6B24EA82 = this.Relations["FK__control_e__prod___6B24EA82"];
-            this.relationFK__control_v__clie___6754599E = this.Relations["FK__control_v__clie___6754599E"];
-            this.relationFK__control_v__func___68487DD7 = this.Relations["FK__control_v__func___68487DD7"];
-            this.relationFK__pedidos__clie_CD__5EBF139D = this.Relations["FK__pedidos__clie_CD__5EBF139D"];
-            this.relationFK__pedidos__prod_CD__5FB337D6 = this.Relations["FK__pedidos__prod_CD__5FB337D6"];
+            this.relationFK__control_c__clie___3F466844 = this.Relations["FK__control_c__clie___3F466844"];
+            this.relationFK__control_c__func___3E52440B = this.Relations["FK__control_c__func___3E52440B"];
+            this.relationFK__control_c__prod___403A8C7D = this.Relations["FK__control_c__prod___403A8C7D"];
+            this.relationFK__control_e__forn___47DBAE45 = this.Relations["FK__control_e__forn___47DBAE45"];
+            this.relationFK__control_e__prod___46E78A0C = this.Relations["FK__control_e__prod___46E78A0C"];
+            this.relationFK__control_v__clie___4316F928 = this.Relations["FK__control_v__clie___4316F928"];
+            this.relationFK__control_v__func___440B1D61 = this.Relations["FK__control_v__func___440B1D61"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -411,46 +381,36 @@ namespace Mahogany {
             base.Tables.Add(this.tablefornecedores);
             this.tablefuncionarios = new funcionariosDataTable();
             base.Tables.Add(this.tablefuncionarios);
-            this.tablepedidos = new pedidosDataTable();
-            base.Tables.Add(this.tablepedidos);
             this.tableprodutos = new produtosDataTable();
             base.Tables.Add(this.tableprodutos);
-            this.relationFK__control_c__clie___6383C8BA = new global::System.Data.DataRelation("FK__control_c__clie___6383C8BA", new global::System.Data.DataColumn[] {
+            this.relationFK__control_c__clie___3F466844 = new global::System.Data.DataRelation("FK__control_c__clie___3F466844", new global::System.Data.DataColumn[] {
                         this.tableclientes.clie_CDColumn}, new global::System.Data.DataColumn[] {
                         this.tablecontrol_caixa.clie_CDColumn}, false);
-            this.Relations.Add(this.relationFK__control_c__clie___6383C8BA);
-            this.relationFK__control_c__func___628FA481 = new global::System.Data.DataRelation("FK__control_c__func___628FA481", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__control_c__clie___3F466844);
+            this.relationFK__control_c__func___3E52440B = new global::System.Data.DataRelation("FK__control_c__func___3E52440B", new global::System.Data.DataColumn[] {
                         this.tablefuncionarios.func_CDColumn}, new global::System.Data.DataColumn[] {
                         this.tablecontrol_caixa.func_CDColumn}, false);
-            this.Relations.Add(this.relationFK__control_c__func___628FA481);
-            this.relationFK__control_c__prod___6477ECF3 = new global::System.Data.DataRelation("FK__control_c__prod___6477ECF3", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__control_c__func___3E52440B);
+            this.relationFK__control_c__prod___403A8C7D = new global::System.Data.DataRelation("FK__control_c__prod___403A8C7D", new global::System.Data.DataColumn[] {
                         this.tableprodutos.prod_CDColumn}, new global::System.Data.DataColumn[] {
                         this.tablecontrol_caixa.prod_CDColumn}, false);
-            this.Relations.Add(this.relationFK__control_c__prod___6477ECF3);
-            this.relationFK__control_e__forn___6C190EBB = new global::System.Data.DataRelation("FK__control_e__forn___6C190EBB", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__control_c__prod___403A8C7D);
+            this.relationFK__control_e__forn___47DBAE45 = new global::System.Data.DataRelation("FK__control_e__forn___47DBAE45", new global::System.Data.DataColumn[] {
                         this.tablefornecedores.forn_CDColumn}, new global::System.Data.DataColumn[] {
                         this.tablecontrol_estoque.forn_CDColumn}, false);
-            this.Relations.Add(this.relationFK__control_e__forn___6C190EBB);
-            this.relationFK__control_e__prod___6B24EA82 = new global::System.Data.DataRelation("FK__control_e__prod___6B24EA82", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__control_e__forn___47DBAE45);
+            this.relationFK__control_e__prod___46E78A0C = new global::System.Data.DataRelation("FK__control_e__prod___46E78A0C", new global::System.Data.DataColumn[] {
                         this.tableprodutos.prod_CDColumn}, new global::System.Data.DataColumn[] {
                         this.tablecontrol_estoque.prod_CDColumn}, false);
-            this.Relations.Add(this.relationFK__control_e__prod___6B24EA82);
-            this.relationFK__control_v__clie___6754599E = new global::System.Data.DataRelation("FK__control_v__clie___6754599E", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__control_e__prod___46E78A0C);
+            this.relationFK__control_v__clie___4316F928 = new global::System.Data.DataRelation("FK__control_v__clie___4316F928", new global::System.Data.DataColumn[] {
                         this.tableclientes.clie_CDColumn}, new global::System.Data.DataColumn[] {
                         this.tablecontrol_vendas.clie_CDColumn}, false);
-            this.Relations.Add(this.relationFK__control_v__clie___6754599E);
-            this.relationFK__control_v__func___68487DD7 = new global::System.Data.DataRelation("FK__control_v__func___68487DD7", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__control_v__clie___4316F928);
+            this.relationFK__control_v__func___440B1D61 = new global::System.Data.DataRelation("FK__control_v__func___440B1D61", new global::System.Data.DataColumn[] {
                         this.tablefuncionarios.func_CDColumn}, new global::System.Data.DataColumn[] {
                         this.tablecontrol_vendas.func_CDColumn}, false);
-            this.Relations.Add(this.relationFK__control_v__func___68487DD7);
-            this.relationFK__pedidos__clie_CD__5EBF139D = new global::System.Data.DataRelation("FK__pedidos__clie_CD__5EBF139D", new global::System.Data.DataColumn[] {
-                        this.tableclientes.clie_CDColumn}, new global::System.Data.DataColumn[] {
-                        this.tablepedidos.clie_CDColumn}, false);
-            this.Relations.Add(this.relationFK__pedidos__clie_CD__5EBF139D);
-            this.relationFK__pedidos__prod_CD__5FB337D6 = new global::System.Data.DataRelation("FK__pedidos__prod_CD__5FB337D6", new global::System.Data.DataColumn[] {
-                        this.tableprodutos.prod_CDColumn}, new global::System.Data.DataColumn[] {
-                        this.tablepedidos.prod_CDColumn}, false);
-            this.Relations.Add(this.relationFK__pedidos__prod_CD__5FB337D6);
+            this.Relations.Add(this.relationFK__control_v__func___440B1D61);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -486,12 +446,6 @@ namespace Mahogany {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializefuncionarios() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializepedidos() {
             return false;
         }
         
@@ -573,9 +527,6 @@ namespace Mahogany {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void funcionariosRowChangeEventHandler(object sender, funcionariosRowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void pedidosRowChangeEventHandler(object sender, pedidosRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void produtosRowChangeEventHandler(object sender, produtosRowChangeEvent e);
@@ -1115,7 +1066,7 @@ namespace Mahogany {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public control_caixaRow Addcontrol_caixaRow(funcionariosRow parentfuncionariosRowByFK__control_c__func___628FA481, clientesRow parentclientesRowByFK__control_c__clie___6383C8BA, produtosRow parentprodutosRowByFK__control_c__prod___6477ECF3, int prod_QT, decimal caix_Vtotal, string caix_pgmnt) {
+            public control_caixaRow Addcontrol_caixaRow(funcionariosRow parentfuncionariosRowByFK__control_c__func___3E52440B, clientesRow parentclientesRowByFK__control_c__clie___3F466844, produtosRow parentprodutosRowByFK__control_c__prod___403A8C7D, int prod_QT, decimal caix_Vtotal, string caix_pgmnt) {
                 control_caixaRow rowcontrol_caixaRow = ((control_caixaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1125,14 +1076,14 @@ namespace Mahogany {
                         prod_QT,
                         caix_Vtotal,
                         caix_pgmnt};
-                if ((parentfuncionariosRowByFK__control_c__func___628FA481 != null)) {
-                    columnValuesArray[1] = parentfuncionariosRowByFK__control_c__func___628FA481[0];
+                if ((parentfuncionariosRowByFK__control_c__func___3E52440B != null)) {
+                    columnValuesArray[1] = parentfuncionariosRowByFK__control_c__func___3E52440B[0];
                 }
-                if ((parentclientesRowByFK__control_c__clie___6383C8BA != null)) {
-                    columnValuesArray[2] = parentclientesRowByFK__control_c__clie___6383C8BA[0];
+                if ((parentclientesRowByFK__control_c__clie___3F466844 != null)) {
+                    columnValuesArray[2] = parentclientesRowByFK__control_c__clie___3F466844[0];
                 }
-                if ((parentprodutosRowByFK__control_c__prod___6477ECF3 != null)) {
-                    columnValuesArray[3] = parentprodutosRowByFK__control_c__prod___6477ECF3[0];
+                if ((parentprodutosRowByFK__control_c__prod___403A8C7D != null)) {
+                    columnValuesArray[3] = parentprodutosRowByFK__control_c__prod___403A8C7D[0];
                 }
                 rowcontrol_caixaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowcontrol_caixaRow);
@@ -1504,7 +1455,7 @@ namespace Mahogany {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public control_estoqueRow Addcontrol_estoqueRow(produtosRow parentprodutosRowByFK__control_e__prod___6B24EA82, string prod_desc, System.DateTime esto_DT_entra, System.DateTime esto_DT_saida, int esto_QT_entra, int esto_QT_saida, fornecedoresRow parentfornecedoresRowByFK__control_e__forn___6C190EBB, string forn_Rsocial, int esto_uni) {
+            public control_estoqueRow Addcontrol_estoqueRow(produtosRow parentprodutosRowByFK__control_e__prod___46E78A0C, string prod_desc, System.DateTime esto_DT_entra, System.DateTime esto_DT_saida, int esto_QT_entra, int esto_QT_saida, fornecedoresRow parentfornecedoresRowByFK__control_e__forn___47DBAE45, string forn_Rsocial, int esto_uni) {
                 control_estoqueRow rowcontrol_estoqueRow = ((control_estoqueRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1517,11 +1468,11 @@ namespace Mahogany {
                         null,
                         forn_Rsocial,
                         esto_uni};
-                if ((parentprodutosRowByFK__control_e__prod___6B24EA82 != null)) {
-                    columnValuesArray[1] = parentprodutosRowByFK__control_e__prod___6B24EA82[0];
+                if ((parentprodutosRowByFK__control_e__prod___46E78A0C != null)) {
+                    columnValuesArray[1] = parentprodutosRowByFK__control_e__prod___46E78A0C[0];
                 }
-                if ((parentfornecedoresRowByFK__control_e__forn___6C190EBB != null)) {
-                    columnValuesArray[7] = parentfornecedoresRowByFK__control_e__forn___6C190EBB[0];
+                if ((parentfornecedoresRowByFK__control_e__forn___47DBAE45 != null)) {
+                    columnValuesArray[7] = parentfornecedoresRowByFK__control_e__forn___47DBAE45[0];
                 }
                 rowcontrol_estoqueRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowcontrol_estoqueRow);
@@ -1867,7 +1818,7 @@ namespace Mahogany {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public control_vendasRow Addcontrol_vendasRow(clientesRow parentclientesRowByFK__control_v__clie___6754599E, System.DateTime vend_DT, System.DateTime vend_venci, string vend_pgmnt, funcionariosRow parentfuncionariosRowByFK__control_v__func___68487DD7) {
+            public control_vendasRow Addcontrol_vendasRow(clientesRow parentclientesRowByFK__control_v__clie___4316F928, System.DateTime vend_DT, System.DateTime vend_venci, string vend_pgmnt, funcionariosRow parentfuncionariosRowByFK__control_v__func___440B1D61) {
                 control_vendasRow rowcontrol_vendasRow = ((control_vendasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1876,11 +1827,11 @@ namespace Mahogany {
                         vend_venci,
                         vend_pgmnt,
                         null};
-                if ((parentclientesRowByFK__control_v__clie___6754599E != null)) {
-                    columnValuesArray[1] = parentclientesRowByFK__control_v__clie___6754599E[0];
+                if ((parentclientesRowByFK__control_v__clie___4316F928 != null)) {
+                    columnValuesArray[1] = parentclientesRowByFK__control_v__clie___4316F928[0];
                 }
-                if ((parentfuncionariosRowByFK__control_v__func___68487DD7 != null)) {
-                    columnValuesArray[5] = parentfuncionariosRowByFK__control_v__func___68487DD7[0];
+                if ((parentfuncionariosRowByFK__control_v__func___440B1D61 != null)) {
+                    columnValuesArray[5] = parentfuncionariosRowByFK__control_v__func___440B1D61[0];
                 }
                 rowcontrol_vendasRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowcontrol_vendasRow);
@@ -2883,412 +2834,6 @@ namespace Mahogany {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class pedidosDataTable : global::System.Data.TypedTableBase<pedidosRow> {
-            
-            private global::System.Data.DataColumn columnpedi_CD;
-            
-            private global::System.Data.DataColumn columnpedi_DT;
-            
-            private global::System.Data.DataColumn columnclie_CD;
-            
-            private global::System.Data.DataColumn columnclie_NM;
-            
-            private global::System.Data.DataColumn columnclie_fone;
-            
-            private global::System.Data.DataColumn columnprod_CD;
-            
-            private global::System.Data.DataColumn columnprod_desc;
-            
-            private global::System.Data.DataColumn columnpedi_end_entre;
-            
-            private global::System.Data.DataColumn columnpedi_DT_entre;
-            
-            private global::System.Data.DataColumn columnpedi_status;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public pedidosDataTable() {
-                this.TableName = "pedidos";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal pedidosDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected pedidosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn pedi_CDColumn {
-                get {
-                    return this.columnpedi_CD;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn pedi_DTColumn {
-                get {
-                    return this.columnpedi_DT;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn clie_CDColumn {
-                get {
-                    return this.columnclie_CD;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn clie_NMColumn {
-                get {
-                    return this.columnclie_NM;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn clie_foneColumn {
-                get {
-                    return this.columnclie_fone;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn prod_CDColumn {
-                get {
-                    return this.columnprod_CD;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn prod_descColumn {
-                get {
-                    return this.columnprod_desc;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn pedi_end_entreColumn {
-                get {
-                    return this.columnpedi_end_entre;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn pedi_DT_entreColumn {
-                get {
-                    return this.columnpedi_DT_entre;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn pedi_statusColumn {
-                get {
-                    return this.columnpedi_status;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public pedidosRow this[int index] {
-                get {
-                    return ((pedidosRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event pedidosRowChangeEventHandler pedidosRowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event pedidosRowChangeEventHandler pedidosRowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event pedidosRowChangeEventHandler pedidosRowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event pedidosRowChangeEventHandler pedidosRowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddpedidosRow(pedidosRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public pedidosRow AddpedidosRow(System.DateTime pedi_DT, clientesRow parentclientesRowByFK__pedidos__clie_CD__5EBF139D, string clie_NM, string clie_fone, produtosRow parentprodutosRowByFK__pedidos__prod_CD__5FB337D6, string prod_desc, string pedi_end_entre, System.DateTime pedi_DT_entre, string pedi_status) {
-                pedidosRow rowpedidosRow = ((pedidosRow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        null,
-                        pedi_DT,
-                        null,
-                        clie_NM,
-                        clie_fone,
-                        null,
-                        prod_desc,
-                        pedi_end_entre,
-                        pedi_DT_entre,
-                        pedi_status};
-                if ((parentclientesRowByFK__pedidos__clie_CD__5EBF139D != null)) {
-                    columnValuesArray[2] = parentclientesRowByFK__pedidos__clie_CD__5EBF139D[0];
-                }
-                if ((parentprodutosRowByFK__pedidos__prod_CD__5FB337D6 != null)) {
-                    columnValuesArray[5] = parentprodutosRowByFK__pedidos__prod_CD__5FB337D6[0];
-                }
-                rowpedidosRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowpedidosRow);
-                return rowpedidosRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public pedidosRow FindBypedi_CD(int pedi_CD) {
-                return ((pedidosRow)(this.Rows.Find(new object[] {
-                            pedi_CD})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                pedidosDataTable cln = ((pedidosDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new pedidosDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal void InitVars() {
-                this.columnpedi_CD = base.Columns["pedi_CD"];
-                this.columnpedi_DT = base.Columns["pedi_DT"];
-                this.columnclie_CD = base.Columns["clie_CD"];
-                this.columnclie_NM = base.Columns["clie_NM"];
-                this.columnclie_fone = base.Columns["clie_fone"];
-                this.columnprod_CD = base.Columns["prod_CD"];
-                this.columnprod_desc = base.Columns["prod_desc"];
-                this.columnpedi_end_entre = base.Columns["pedi_end_entre"];
-                this.columnpedi_DT_entre = base.Columns["pedi_DT_entre"];
-                this.columnpedi_status = base.Columns["pedi_status"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            private void InitClass() {
-                this.columnpedi_CD = new global::System.Data.DataColumn("pedi_CD", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnpedi_CD);
-                this.columnpedi_DT = new global::System.Data.DataColumn("pedi_DT", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnpedi_DT);
-                this.columnclie_CD = new global::System.Data.DataColumn("clie_CD", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnclie_CD);
-                this.columnclie_NM = new global::System.Data.DataColumn("clie_NM", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnclie_NM);
-                this.columnclie_fone = new global::System.Data.DataColumn("clie_fone", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnclie_fone);
-                this.columnprod_CD = new global::System.Data.DataColumn("prod_CD", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnprod_CD);
-                this.columnprod_desc = new global::System.Data.DataColumn("prod_desc", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnprod_desc);
-                this.columnpedi_end_entre = new global::System.Data.DataColumn("pedi_end_entre", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnpedi_end_entre);
-                this.columnpedi_DT_entre = new global::System.Data.DataColumn("pedi_DT_entre", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnpedi_DT_entre);
-                this.columnpedi_status = new global::System.Data.DataColumn("pedi_status", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnpedi_status);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnpedi_CD}, true));
-                this.columnpedi_CD.AutoIncrement = true;
-                this.columnpedi_CD.AutoIncrementSeed = -1;
-                this.columnpedi_CD.AutoIncrementStep = -1;
-                this.columnpedi_CD.AllowDBNull = false;
-                this.columnpedi_CD.ReadOnly = true;
-                this.columnpedi_CD.Unique = true;
-                this.columnpedi_DT.AllowDBNull = false;
-                this.columnclie_NM.AllowDBNull = false;
-                this.columnclie_NM.MaxLength = 40;
-                this.columnclie_fone.AllowDBNull = false;
-                this.columnclie_fone.MaxLength = 20;
-                this.columnprod_desc.AllowDBNull = false;
-                this.columnprod_desc.MaxLength = 40;
-                this.columnpedi_end_entre.AllowDBNull = false;
-                this.columnpedi_end_entre.MaxLength = 40;
-                this.columnpedi_DT_entre.AllowDBNull = false;
-                this.columnpedi_status.AllowDBNull = false;
-                this.columnpedi_status.MaxLength = 20;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public pedidosRow NewpedidosRow() {
-                return ((pedidosRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new pedidosRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(pedidosRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.pedidosRowChanged != null)) {
-                    this.pedidosRowChanged(this, new pedidosRowChangeEvent(((pedidosRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.pedidosRowChanging != null)) {
-                    this.pedidosRowChanging(this, new pedidosRowChangeEvent(((pedidosRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.pedidosRowDeleted != null)) {
-                    this.pedidosRowDeleted(this, new pedidosRowChangeEvent(((pedidosRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.pedidosRowDeleting != null)) {
-                    this.pedidosRowDeleting(this, new pedidosRowChangeEvent(((pedidosRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemovepedidosRow(pedidosRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                mahoganyDataSet ds = new mahoganyDataSet();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "pedidosDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class produtosDataTable : global::System.Data.TypedTableBase<produtosRow> {
             
             private global::System.Data.DataColumn columnprod_CD;
@@ -3771,33 +3316,22 @@ namespace Mahogany {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public control_caixaRow[] Getcontrol_caixaRows() {
-                if ((this.Table.ChildRelations["FK__control_c__clie___6383C8BA"] == null)) {
+                if ((this.Table.ChildRelations["FK__control_c__clie___3F466844"] == null)) {
                     return new control_caixaRow[0];
                 }
                 else {
-                    return ((control_caixaRow[])(base.GetChildRows(this.Table.ChildRelations["FK__control_c__clie___6383C8BA"])));
+                    return ((control_caixaRow[])(base.GetChildRows(this.Table.ChildRelations["FK__control_c__clie___3F466844"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public control_vendasRow[] Getcontrol_vendasRows() {
-                if ((this.Table.ChildRelations["FK__control_v__clie___6754599E"] == null)) {
+                if ((this.Table.ChildRelations["FK__control_v__clie___4316F928"] == null)) {
                     return new control_vendasRow[0];
                 }
                 else {
-                    return ((control_vendasRow[])(base.GetChildRows(this.Table.ChildRelations["FK__control_v__clie___6754599E"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public pedidosRow[] GetpedidosRows() {
-                if ((this.Table.ChildRelations["FK__pedidos__clie_CD__5EBF139D"] == null)) {
-                    return new pedidosRow[0];
-                }
-                else {
-                    return ((pedidosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__pedidos__clie_CD__5EBF139D"])));
+                    return ((control_vendasRow[])(base.GetChildRows(this.Table.ChildRelations["FK__control_v__clie___4316F928"])));
                 }
             }
         }
@@ -3912,10 +3446,10 @@ namespace Mahogany {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public clientesRow clientesRow {
                 get {
-                    return ((clientesRow)(this.GetParentRow(this.Table.ParentRelations["FK__control_c__clie___6383C8BA"])));
+                    return ((clientesRow)(this.GetParentRow(this.Table.ParentRelations["FK__control_c__clie___3F466844"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__control_c__clie___6383C8BA"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__control_c__clie___3F466844"]);
                 }
             }
             
@@ -3923,10 +3457,10 @@ namespace Mahogany {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public funcionariosRow funcionariosRow {
                 get {
-                    return ((funcionariosRow)(this.GetParentRow(this.Table.ParentRelations["FK__control_c__func___628FA481"])));
+                    return ((funcionariosRow)(this.GetParentRow(this.Table.ParentRelations["FK__control_c__func___3E52440B"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__control_c__func___628FA481"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__control_c__func___3E52440B"]);
                 }
             }
             
@@ -3934,10 +3468,10 @@ namespace Mahogany {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public produtosRow produtosRow {
                 get {
-                    return ((produtosRow)(this.GetParentRow(this.Table.ParentRelations["FK__control_c__prod___6477ECF3"])));
+                    return ((produtosRow)(this.GetParentRow(this.Table.ParentRelations["FK__control_c__prod___403A8C7D"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__control_c__prod___6477ECF3"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__control_c__prod___403A8C7D"]);
                 }
             }
             
@@ -4116,10 +3650,10 @@ namespace Mahogany {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public fornecedoresRow fornecedoresRow {
                 get {
-                    return ((fornecedoresRow)(this.GetParentRow(this.Table.ParentRelations["FK__control_e__forn___6C190EBB"])));
+                    return ((fornecedoresRow)(this.GetParentRow(this.Table.ParentRelations["FK__control_e__forn___47DBAE45"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__control_e__forn___6C190EBB"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__control_e__forn___47DBAE45"]);
                 }
             }
             
@@ -4127,10 +3661,10 @@ namespace Mahogany {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public produtosRow produtosRow {
                 get {
-                    return ((produtosRow)(this.GetParentRow(this.Table.ParentRelations["FK__control_e__prod___6B24EA82"])));
+                    return ((produtosRow)(this.GetParentRow(this.Table.ParentRelations["FK__control_e__prod___46E78A0C"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__control_e__prod___6B24EA82"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__control_e__prod___46E78A0C"]);
                 }
             }
             
@@ -4253,10 +3787,10 @@ namespace Mahogany {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public clientesRow clientesRow {
                 get {
-                    return ((clientesRow)(this.GetParentRow(this.Table.ParentRelations["FK__control_v__clie___6754599E"])));
+                    return ((clientesRow)(this.GetParentRow(this.Table.ParentRelations["FK__control_v__clie___4316F928"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__control_v__clie___6754599E"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__control_v__clie___4316F928"]);
                 }
             }
             
@@ -4264,10 +3798,10 @@ namespace Mahogany {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public funcionariosRow funcionariosRow {
                 get {
-                    return ((funcionariosRow)(this.GetParentRow(this.Table.ParentRelations["FK__control_v__func___68487DD7"])));
+                    return ((funcionariosRow)(this.GetParentRow(this.Table.ParentRelations["FK__control_v__func___440B1D61"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__control_v__func___68487DD7"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__control_v__func___440B1D61"]);
                 }
             }
             
@@ -4401,11 +3935,11 @@ namespace Mahogany {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public control_estoqueRow[] Getcontrol_estoqueRows() {
-                if ((this.Table.ChildRelations["FK__control_e__forn___6C190EBB"] == null)) {
+                if ((this.Table.ChildRelations["FK__control_e__forn___47DBAE45"] == null)) {
                     return new control_estoqueRow[0];
                 }
                 else {
-                    return ((control_estoqueRow[])(base.GetChildRows(this.Table.ChildRelations["FK__control_e__forn___6C190EBB"])));
+                    return ((control_estoqueRow[])(base.GetChildRows(this.Table.ChildRelations["FK__control_e__forn___47DBAE45"])));
                 }
             }
         }
@@ -4559,204 +4093,23 @@ namespace Mahogany {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public control_caixaRow[] Getcontrol_caixaRows() {
-                if ((this.Table.ChildRelations["FK__control_c__func___628FA481"] == null)) {
+                if ((this.Table.ChildRelations["FK__control_c__func___3E52440B"] == null)) {
                     return new control_caixaRow[0];
                 }
                 else {
-                    return ((control_caixaRow[])(base.GetChildRows(this.Table.ChildRelations["FK__control_c__func___628FA481"])));
+                    return ((control_caixaRow[])(base.GetChildRows(this.Table.ChildRelations["FK__control_c__func___3E52440B"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public control_vendasRow[] Getcontrol_vendasRows() {
-                if ((this.Table.ChildRelations["FK__control_v__func___68487DD7"] == null)) {
+                if ((this.Table.ChildRelations["FK__control_v__func___440B1D61"] == null)) {
                     return new control_vendasRow[0];
                 }
                 else {
-                    return ((control_vendasRow[])(base.GetChildRows(this.Table.ChildRelations["FK__control_v__func___68487DD7"])));
+                    return ((control_vendasRow[])(base.GetChildRows(this.Table.ChildRelations["FK__control_v__func___440B1D61"])));
                 }
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class pedidosRow : global::System.Data.DataRow {
-            
-            private pedidosDataTable tablepedidos;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal pedidosRow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tablepedidos = ((pedidosDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int pedi_CD {
-                get {
-                    return ((int)(this[this.tablepedidos.pedi_CDColumn]));
-                }
-                set {
-                    this[this.tablepedidos.pedi_CDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime pedi_DT {
-                get {
-                    return ((global::System.DateTime)(this[this.tablepedidos.pedi_DTColumn]));
-                }
-                set {
-                    this[this.tablepedidos.pedi_DTColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int clie_CD {
-                get {
-                    try {
-                        return ((int)(this[this.tablepedidos.clie_CDColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'clie_CD\' na tabela \'pedidos\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablepedidos.clie_CDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string clie_NM {
-                get {
-                    return ((string)(this[this.tablepedidos.clie_NMColumn]));
-                }
-                set {
-                    this[this.tablepedidos.clie_NMColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string clie_fone {
-                get {
-                    return ((string)(this[this.tablepedidos.clie_foneColumn]));
-                }
-                set {
-                    this[this.tablepedidos.clie_foneColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int prod_CD {
-                get {
-                    try {
-                        return ((int)(this[this.tablepedidos.prod_CDColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'prod_CD\' na tabela \'pedidos\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablepedidos.prod_CDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string prod_desc {
-                get {
-                    return ((string)(this[this.tablepedidos.prod_descColumn]));
-                }
-                set {
-                    this[this.tablepedidos.prod_descColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string pedi_end_entre {
-                get {
-                    return ((string)(this[this.tablepedidos.pedi_end_entreColumn]));
-                }
-                set {
-                    this[this.tablepedidos.pedi_end_entreColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime pedi_DT_entre {
-                get {
-                    return ((global::System.DateTime)(this[this.tablepedidos.pedi_DT_entreColumn]));
-                }
-                set {
-                    this[this.tablepedidos.pedi_DT_entreColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string pedi_status {
-                get {
-                    return ((string)(this[this.tablepedidos.pedi_statusColumn]));
-                }
-                set {
-                    this[this.tablepedidos.pedi_statusColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public clientesRow clientesRow {
-                get {
-                    return ((clientesRow)(this.GetParentRow(this.Table.ParentRelations["FK__pedidos__clie_CD__5EBF139D"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__pedidos__clie_CD__5EBF139D"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public produtosRow produtosRow {
-                get {
-                    return ((produtosRow)(this.GetParentRow(this.Table.ParentRelations["FK__pedidos__prod_CD__5FB337D6"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__pedidos__prod_CD__5FB337D6"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Isclie_CDNull() {
-                return this.IsNull(this.tablepedidos.clie_CDColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setclie_CDNull() {
-                this[this.tablepedidos.clie_CDColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Isprod_CDNull() {
-                return this.IsNull(this.tablepedidos.prod_CDColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setprod_CDNull() {
-                this[this.tablepedidos.prod_CDColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -4865,33 +4218,22 @@ namespace Mahogany {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public control_caixaRow[] Getcontrol_caixaRows() {
-                if ((this.Table.ChildRelations["FK__control_c__prod___6477ECF3"] == null)) {
+                if ((this.Table.ChildRelations["FK__control_c__prod___403A8C7D"] == null)) {
                     return new control_caixaRow[0];
                 }
                 else {
-                    return ((control_caixaRow[])(base.GetChildRows(this.Table.ChildRelations["FK__control_c__prod___6477ECF3"])));
+                    return ((control_caixaRow[])(base.GetChildRows(this.Table.ChildRelations["FK__control_c__prod___403A8C7D"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public control_estoqueRow[] Getcontrol_estoqueRows() {
-                if ((this.Table.ChildRelations["FK__control_e__prod___6B24EA82"] == null)) {
+                if ((this.Table.ChildRelations["FK__control_e__prod___46E78A0C"] == null)) {
                     return new control_estoqueRow[0];
                 }
                 else {
-                    return ((control_estoqueRow[])(base.GetChildRows(this.Table.ChildRelations["FK__control_e__prod___6B24EA82"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public pedidosRow[] GetpedidosRows() {
-                if ((this.Table.ChildRelations["FK__pedidos__prod_CD__5FB337D6"] == null)) {
-                    return new pedidosRow[0];
-                }
-                else {
-                    return ((pedidosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__pedidos__prod_CD__5FB337D6"])));
+                    return ((control_estoqueRow[])(base.GetChildRows(this.Table.ChildRelations["FK__control_e__prod___46E78A0C"])));
                 }
             }
         }
@@ -5086,40 +4428,6 @@ namespace Mahogany {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public funcionariosRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class pedidosRowChangeEvent : global::System.EventArgs {
-            
-            private pedidosRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public pedidosRowChangeEvent(pedidosRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public pedidosRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -7671,8 +6979,8 @@ SELECT forn_CD, forn_Rsocial, forn_CNPJ, forn_Ins_est, forn_end, forn_fone, forn
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_func_senha", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_senha", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [madera].[funcionarios] ([func_NM], [func_CPF], [func_RG], [func_DT_nasc], [func_end], [func_numcasa], [func_fone], [func_email], [func_comiss], [func_login], [func_senha], [func_cargo2]) VALUES (@func_NM, @func_CPF, @func_RG, @func_DT_nasc, @func_end, @func_numcasa, @func_fone, @func_email, @func_comiss, @func_login, @func_senha, @func_cargo2);
-SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa, func_fone, func_email, func_comiss, func_login, func_senha, func_cargo2 FROM madera.funcionarios WHERE (func_CD = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [madera].[funcionarios] ([func_NM], [func_CPF], [func_RG], [func_DT_nasc], [func_end], [func_numcasa], [func_fone], [func_email], [func_comiss], [func_login], [func_senha]) VALUES (@func_NM, @func_CPF, @func_RG, @func_DT_nasc, @func_end, @func_numcasa, @func_fone, @func_email, @func_comiss, @func_login, @func_senha);
+SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa, func_fone, func_email, func_comiss, func_login, func_senha FROM madera.funcionarios WHERE (func_CD = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@func_NM", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_NM", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@func_CPF", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_CPF", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -7685,7 +6993,6 @@ SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@func_comiss", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_comiss", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@func_login", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_login", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@func_senha", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_senha", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@func_cargo2", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "func_cargo2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = @"UPDATE [madera].[funcionarios] SET [func_NM] = @func_NM, [func_CPF] = @func_CPF, [func_RG] = @func_RG, [func_DT_nasc] = @func_DT_nasc, [func_end] = @func_end, [func_numcasa] = @func_numcasa, [func_fone] = @func_fone, [func_email] = @func_email, [func_comiss] = @func_comiss, [func_login] = @func_login, [func_senha] = @func_senha WHERE (([func_CD] = @Original_func_CD) AND ([func_NM] = @Original_func_NM) AND ([func_CPF] = @Original_func_CPF) AND ([func_RG] = @Original_func_RG) AND ([func_DT_nasc] = @Original_func_DT_nasc) AND ([func_end] = @Original_func_end) AND ([func_numcasa] = @Original_func_numcasa) AND ([func_fone] = @Original_func_fone) AND ([func_email] = @Original_func_email) AND ([func_comiss] = @Original_func_comiss) AND ([func_login] = @Original_func_login) AND ([func_senha] = @Original_func_senha));
@@ -7856,7 +7163,7 @@ SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string func_NM, int func_CPF, string func_RG, System.DateTime func_DT_nasc, string func_end, int func_numcasa, string func_fone, string func_email, decimal func_comiss, string func_login, int func_senha, string func_cargo2) {
+        public virtual int Insert(string func_NM, int func_CPF, string func_RG, System.DateTime func_DT_nasc, string func_end, int func_numcasa, string func_fone, string func_email, decimal func_comiss, string func_login, int func_senha) {
             if ((func_NM == null)) {
                 throw new global::System.ArgumentNullException("func_NM");
             }
@@ -7898,12 +7205,6 @@ SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa
                 this.Adapter.InsertCommand.Parameters[9].Value = ((string)(func_login));
             }
             this.Adapter.InsertCommand.Parameters[10].Value = ((int)(func_senha));
-            if ((func_cargo2 == null)) {
-                throw new global::System.ArgumentNullException("func_cargo2");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(func_cargo2));
-            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -8078,566 +7379,6 @@ SELECT func_CD, func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa
                     string Original_func_login, 
                     int Original_func_senha) {
             return this.Update(func_NM, func_CPF, func_RG, func_DT_nasc, func_end, func_numcasa, func_fone, func_email, func_comiss, func_login, func_senha, Original_func_CD, Original_func_NM, Original_func_CPF, Original_func_RG, Original_func_DT_nasc, Original_func_end, Original_func_numcasa, Original_func_fone, Original_func_email, Original_func_comiss, Original_func_login, Original_func_senha, Original_func_CD);
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class pedidosTableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public pedidosTableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "pedidos";
-            tableMapping.ColumnMappings.Add("pedi_CD", "pedi_CD");
-            tableMapping.ColumnMappings.Add("pedi_DT", "pedi_DT");
-            tableMapping.ColumnMappings.Add("clie_CD", "clie_CD");
-            tableMapping.ColumnMappings.Add("clie_NM", "clie_NM");
-            tableMapping.ColumnMappings.Add("clie_fone", "clie_fone");
-            tableMapping.ColumnMappings.Add("prod_CD", "prod_CD");
-            tableMapping.ColumnMappings.Add("prod_desc", "prod_desc");
-            tableMapping.ColumnMappings.Add("pedi_end_entre", "pedi_end_entre");
-            tableMapping.ColumnMappings.Add("pedi_DT_entre", "pedi_DT_entre");
-            tableMapping.ColumnMappings.Add("pedi_status", "pedi_status");
-            this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [madera].[pedidos] WHERE (([pedi_CD] = @Original_pedi_CD) AND ([pedi_DT] = @Original_pedi_DT) AND ((@IsNull_clie_CD = 1 AND [clie_CD] IS NULL) OR ([clie_CD] = @Original_clie_CD)) AND ([clie_NM] = @Original_clie_NM) AND ([clie_fone] = @Original_clie_fone) AND ((@IsNull_prod_CD = 1 AND [prod_CD] IS NULL) OR ([prod_CD] = @Original_prod_CD)) AND ([prod_desc] = @Original_prod_desc) AND ([pedi_end_entre] = @Original_pedi_end_entre) AND ([pedi_DT_entre] = @Original_pedi_DT_entre) AND ([pedi_status] = @Original_pedi_status))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pedi_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_CD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pedi_DT", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_DT", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_clie_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "clie_CD", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_clie_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "clie_CD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_clie_NM", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "clie_NM", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_clie_fone", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "clie_fone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_prod_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "prod_CD", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_prod_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "prod_CD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_prod_desc", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "prod_desc", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pedi_end_entre", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_end_entre", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pedi_DT_entre", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_DT_entre", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pedi_status", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_status", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [madera].[pedidos] ([pedi_DT], [clie_CD], [clie_NM], [clie_fone], [prod_CD], [prod_desc], [pedi_end_entre], [pedi_DT_entre], [pedi_status]) VALUES (@pedi_DT, @clie_CD, @clie_NM, @clie_fone, @prod_CD, @prod_desc, @pedi_end_entre, @pedi_DT_entre, @pedi_status);
-SELECT pedi_CD, pedi_DT, clie_CD, clie_NM, clie_fone, prod_CD, prod_desc, pedi_end_entre, pedi_DT_entre, pedi_status FROM madera.pedidos WHERE (pedi_CD = SCOPE_IDENTITY())";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pedi_DT", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_DT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@clie_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "clie_CD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@clie_NM", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "clie_NM", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@clie_fone", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "clie_fone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@prod_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "prod_CD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@prod_desc", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "prod_desc", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pedi_end_entre", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_end_entre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pedi_DT_entre", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_DT_entre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pedi_status", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [madera].[pedidos] SET [pedi_DT] = @pedi_DT, [clie_CD] = @clie_CD, [clie_NM] = @clie_NM, [clie_fone] = @clie_fone, [prod_CD] = @prod_CD, [prod_desc] = @prod_desc, [pedi_end_entre] = @pedi_end_entre, [pedi_DT_entre] = @pedi_DT_entre, [pedi_status] = @pedi_status WHERE (([pedi_CD] = @Original_pedi_CD) AND ([pedi_DT] = @Original_pedi_DT) AND ((@IsNull_clie_CD = 1 AND [clie_CD] IS NULL) OR ([clie_CD] = @Original_clie_CD)) AND ([clie_NM] = @Original_clie_NM) AND ([clie_fone] = @Original_clie_fone) AND ((@IsNull_prod_CD = 1 AND [prod_CD] IS NULL) OR ([prod_CD] = @Original_prod_CD)) AND ([prod_desc] = @Original_prod_desc) AND ([pedi_end_entre] = @Original_pedi_end_entre) AND ([pedi_DT_entre] = @Original_pedi_DT_entre) AND ([pedi_status] = @Original_pedi_status));
-SELECT pedi_CD, pedi_DT, clie_CD, clie_NM, clie_fone, prod_CD, prod_desc, pedi_end_entre, pedi_DT_entre, pedi_status FROM madera.pedidos WHERE (pedi_CD = @pedi_CD)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pedi_DT", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_DT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@clie_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "clie_CD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@clie_NM", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "clie_NM", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@clie_fone", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "clie_fone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@prod_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "prod_CD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@prod_desc", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "prod_desc", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pedi_end_entre", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_end_entre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pedi_DT_entre", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_DT_entre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pedi_status", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pedi_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_CD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pedi_DT", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_DT", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_clie_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "clie_CD", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_clie_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "clie_CD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_clie_NM", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "clie_NM", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_clie_fone", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "clie_fone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_prod_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "prod_CD", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_prod_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "prod_CD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_prod_desc", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "prod_desc", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pedi_end_entre", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_end_entre", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pedi_DT_entre", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_DT_entre", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pedi_status", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_status", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pedi_CD", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "pedi_CD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Mahogany.Properties.Settings.Default.mahoganyConnectionString;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT pedi_CD, pedi_DT, clie_CD, clie_NM, clie_fone, prod_CD, prod_desc, pedi_en" +
-                "d_entre, pedi_DT_entre, pedi_status FROM madera.pedidos";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(mahoganyDataSet.pedidosDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual mahoganyDataSet.pedidosDataTable GetData() {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            mahoganyDataSet.pedidosDataTable dataTable = new mahoganyDataSet.pedidosDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(mahoganyDataSet.pedidosDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(mahoganyDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "pedidos");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_pedi_CD, System.DateTime Original_pedi_DT, global::System.Nullable<int> Original_clie_CD, string Original_clie_NM, string Original_clie_fone, global::System.Nullable<int> Original_prod_CD, string Original_prod_desc, string Original_pedi_end_entre, System.DateTime Original_pedi_DT_entre, string Original_pedi_status) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_pedi_CD));
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((System.DateTime)(Original_pedi_DT));
-            if ((Original_clie_CD.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_clie_CD.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            if ((Original_clie_NM == null)) {
-                throw new global::System.ArgumentNullException("Original_clie_NM");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_clie_NM));
-            }
-            if ((Original_clie_fone == null)) {
-                throw new global::System.ArgumentNullException("Original_clie_fone");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_clie_fone));
-            }
-            if ((Original_prod_CD.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((int)(Original_prod_CD.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            if ((Original_prod_desc == null)) {
-                throw new global::System.ArgumentNullException("Original_prod_desc");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_prod_desc));
-            }
-            if ((Original_pedi_end_entre == null)) {
-                throw new global::System.ArgumentNullException("Original_pedi_end_entre");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((string)(Original_pedi_end_entre));
-            }
-            this.Adapter.DeleteCommand.Parameters[10].Value = ((System.DateTime)(Original_pedi_DT_entre));
-            if ((Original_pedi_status == null)) {
-                throw new global::System.ArgumentNullException("Original_pedi_status");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((string)(Original_pedi_status));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(System.DateTime pedi_DT, global::System.Nullable<int> clie_CD, string clie_NM, string clie_fone, global::System.Nullable<int> prod_CD, string prod_desc, string pedi_end_entre, System.DateTime pedi_DT_entre, string pedi_status) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(pedi_DT));
-            if ((clie_CD.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(clie_CD.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            if ((clie_NM == null)) {
-                throw new global::System.ArgumentNullException("clie_NM");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(clie_NM));
-            }
-            if ((clie_fone == null)) {
-                throw new global::System.ArgumentNullException("clie_fone");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(clie_fone));
-            }
-            if ((prod_CD.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(prod_CD.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((prod_desc == null)) {
-                throw new global::System.ArgumentNullException("prod_desc");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(prod_desc));
-            }
-            if ((pedi_end_entre == null)) {
-                throw new global::System.ArgumentNullException("pedi_end_entre");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(pedi_end_entre));
-            }
-            this.Adapter.InsertCommand.Parameters[7].Value = ((System.DateTime)(pedi_DT_entre));
-            if ((pedi_status == null)) {
-                throw new global::System.ArgumentNullException("pedi_status");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(pedi_status));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    System.DateTime pedi_DT, 
-                    global::System.Nullable<int> clie_CD, 
-                    string clie_NM, 
-                    string clie_fone, 
-                    global::System.Nullable<int> prod_CD, 
-                    string prod_desc, 
-                    string pedi_end_entre, 
-                    System.DateTime pedi_DT_entre, 
-                    string pedi_status, 
-                    int Original_pedi_CD, 
-                    System.DateTime Original_pedi_DT, 
-                    global::System.Nullable<int> Original_clie_CD, 
-                    string Original_clie_NM, 
-                    string Original_clie_fone, 
-                    global::System.Nullable<int> Original_prod_CD, 
-                    string Original_prod_desc, 
-                    string Original_pedi_end_entre, 
-                    System.DateTime Original_pedi_DT_entre, 
-                    string Original_pedi_status, 
-                    int pedi_CD) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((System.DateTime)(pedi_DT));
-            if ((clie_CD.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(clie_CD.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            if ((clie_NM == null)) {
-                throw new global::System.ArgumentNullException("clie_NM");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(clie_NM));
-            }
-            if ((clie_fone == null)) {
-                throw new global::System.ArgumentNullException("clie_fone");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(clie_fone));
-            }
-            if ((prod_CD.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(prod_CD.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((prod_desc == null)) {
-                throw new global::System.ArgumentNullException("prod_desc");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(prod_desc));
-            }
-            if ((pedi_end_entre == null)) {
-                throw new global::System.ArgumentNullException("pedi_end_entre");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(pedi_end_entre));
-            }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((System.DateTime)(pedi_DT_entre));
-            if ((pedi_status == null)) {
-                throw new global::System.ArgumentNullException("pedi_status");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(pedi_status));
-            }
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_pedi_CD));
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((System.DateTime)(Original_pedi_DT));
-            if ((Original_clie_CD.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_clie_CD.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            if ((Original_clie_NM == null)) {
-                throw new global::System.ArgumentNullException("Original_clie_NM");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_clie_NM));
-            }
-            if ((Original_clie_fone == null)) {
-                throw new global::System.ArgumentNullException("Original_clie_fone");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_clie_fone));
-            }
-            if ((Original_prod_CD.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Original_prod_CD.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
-            }
-            if ((Original_prod_desc == null)) {
-                throw new global::System.ArgumentNullException("Original_prod_desc");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_prod_desc));
-            }
-            if ((Original_pedi_end_entre == null)) {
-                throw new global::System.ArgumentNullException("Original_pedi_end_entre");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_pedi_end_entre));
-            }
-            this.Adapter.UpdateCommand.Parameters[19].Value = ((System.DateTime)(Original_pedi_DT_entre));
-            if ((Original_pedi_status == null)) {
-                throw new global::System.ArgumentNullException("Original_pedi_status");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(Original_pedi_status));
-            }
-            this.Adapter.UpdateCommand.Parameters[21].Value = ((int)(pedi_CD));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    System.DateTime pedi_DT, 
-                    global::System.Nullable<int> clie_CD, 
-                    string clie_NM, 
-                    string clie_fone, 
-                    global::System.Nullable<int> prod_CD, 
-                    string prod_desc, 
-                    string pedi_end_entre, 
-                    System.DateTime pedi_DT_entre, 
-                    string pedi_status, 
-                    int Original_pedi_CD, 
-                    System.DateTime Original_pedi_DT, 
-                    global::System.Nullable<int> Original_clie_CD, 
-                    string Original_clie_NM, 
-                    string Original_clie_fone, 
-                    global::System.Nullable<int> Original_prod_CD, 
-                    string Original_prod_desc, 
-                    string Original_pedi_end_entre, 
-                    System.DateTime Original_pedi_DT_entre, 
-                    string Original_pedi_status) {
-            return this.Update(pedi_DT, clie_CD, clie_NM, clie_fone, prod_CD, prod_desc, pedi_end_entre, pedi_DT_entre, pedi_status, Original_pedi_CD, Original_pedi_DT, Original_clie_CD, Original_clie_NM, Original_clie_fone, Original_prod_CD, Original_prod_desc, Original_pedi_end_entre, Original_pedi_DT_entre, Original_pedi_status, Original_pedi_CD);
         }
     }
     
@@ -9112,8 +7853,6 @@ SELECT prod_CD, prod_desc, prod_tipo, prod_marca, prod_mate, prod_QT, prod_VL_aq
         
         private funcionariosTableAdapter _funcionariosTableAdapter;
         
-        private pedidosTableAdapter _pedidosTableAdapter;
-        
         private produtosTableAdapter _produtosTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
@@ -9220,20 +7959,6 @@ SELECT prod_CD, prod_desc, prod_tipo, prod_marca, prod_mate, prod_QT, prod_VL_aq
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public pedidosTableAdapter pedidosTableAdapter {
-            get {
-                return this._pedidosTableAdapter;
-            }
-            set {
-                this._pedidosTableAdapter = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
         public produtosTableAdapter produtosTableAdapter {
             get {
                 return this._produtosTableAdapter;
@@ -9286,10 +8011,6 @@ SELECT prod_CD, prod_desc, prod_tipo, prod_marca, prod_mate, prod_QT, prod_VL_aq
                             && (this._funcionariosTableAdapter.Connection != null))) {
                     return this._funcionariosTableAdapter.Connection;
                 }
-                if (((this._pedidosTableAdapter != null) 
-                            && (this._pedidosTableAdapter.Connection != null))) {
-                    return this._pedidosTableAdapter.Connection;
-                }
                 if (((this._produtosTableAdapter != null) 
                             && (this._produtosTableAdapter.Connection != null))) {
                     return this._produtosTableAdapter.Connection;
@@ -9323,9 +8044,6 @@ SELECT prod_CD, prod_desc, prod_tipo, prod_marca, prod_mate, prod_QT, prod_VL_aq
                     count = (count + 1);
                 }
                 if ((this._funcionariosTableAdapter != null)) {
-                    count = (count + 1);
-                }
-                if ((this._pedidosTableAdapter != null)) {
                     count = (count + 1);
                 }
                 if ((this._produtosTableAdapter != null)) {
@@ -9405,15 +8123,6 @@ SELECT prod_CD, prod_desc, prod_tipo, prod_marca, prod_mate, prod_QT, prod_VL_aq
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._pedidosTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.pedidos.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._pedidosTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             return result;
         }
         
@@ -9480,14 +8189,6 @@ SELECT prod_CD, prod_desc, prod_tipo, prod_marca, prod_mate, prod_QT, prod_VL_aq
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._pedidosTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.pedidos.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._pedidosTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             return result;
         }
         
@@ -9498,14 +8199,6 @@ SELECT prod_CD, prod_desc, prod_tipo, prod_marca, prod_mate, prod_QT, prod_VL_aq
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateDeletedRows(mahoganyDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._pedidosTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.pedidos.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._pedidosTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._control_vendasTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.control_vendas.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -9631,11 +8324,6 @@ SELECT prod_CD, prod_desc, prod_tipo, prod_marca, prod_mate, prod_QT, prod_VL_aq
                 throw new global::System.ArgumentException("Todos os TableAdapters gerenciados por um TableAdapterManager devem usar a mesma " +
                         "cadeia de conexão.");
             }
-            if (((this._pedidosTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._pedidosTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("Todos os TableAdapters gerenciados por um TableAdapterManager devem usar a mesma " +
-                        "cadeia de conexão.");
-            }
             if (((this._produtosTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._produtosTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Todos os TableAdapters gerenciados por um TableAdapterManager devem usar a mesma " +
@@ -9725,15 +8413,6 @@ SELECT prod_CD, prod_desc, prod_tipo, prod_marca, prod_mate, prod_QT, prod_VL_aq
                     if (this._funcionariosTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._funcionariosTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._funcionariosTableAdapter.Adapter);
-                    }
-                }
-                if ((this._pedidosTableAdapter != null)) {
-                    revertConnections.Add(this._pedidosTableAdapter, this._pedidosTableAdapter.Connection);
-                    this._pedidosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._pedidosTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._pedidosTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._pedidosTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._pedidosTableAdapter.Adapter);
                     }
                 }
                 if ((this._produtosTableAdapter != null)) {
@@ -9826,10 +8505,6 @@ SELECT prod_CD, prod_desc, prod_tipo, prod_marca, prod_mate, prod_QT, prod_VL_aq
                 if ((this._funcionariosTableAdapter != null)) {
                     this._funcionariosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._funcionariosTableAdapter]));
                     this._funcionariosTableAdapter.Transaction = null;
-                }
-                if ((this._pedidosTableAdapter != null)) {
-                    this._pedidosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._pedidosTableAdapter]));
-                    this._pedidosTableAdapter.Transaction = null;
                 }
                 if ((this._produtosTableAdapter != null)) {
                     this._produtosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._produtosTableAdapter]));
